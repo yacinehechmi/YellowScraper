@@ -1,0 +1,1576 @@
+[2023-03-04 21:25:14,540] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:14,541] ERROR:DATABASE QUERY FAILED: CREATE DATABASE yellowpages; 
+ error: database "yellowpages" already exists
+
+[2023-03-04 21:25:14,547] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:14,547] INFO:DATABASE QUERY SUCCESSFUL: 
+                        CREATE TABLE IF NOT EXISTS business_info (
+                        business_id BIGSERIAL PRIMARY KEY NOT NULL,
+                        name VARCHAR(50),
+                        phone VARCHAR(20), 
+                        price_range INTEGER,
+                        year_in_business INTEGER,
+                        amenities text[],
+                        categories text[],
+                        city_name VARCHAR(50),
+                        city_code VARCHAR(30),
+                        zip_code INTEGER,
+                        updated_at TIMESTAMP,
+                        CONSTRAINT business_info_name_unique UNIQUE (name)
+                        );
+                        CREATE TABLE IF NOT EXISTS access_info (
+                        open_status VARCHAR(30),
+                        website VARCHAR(200),
+                        order_online VARCHAR(30),
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),                                                     
+                        CONSTRAINT access_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS yellowpage_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT yellowpage_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS tripadvisor_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT tripadvisor_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS foursquare_info (
+                        rating FLOAT,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
+                        );
+                        
+[2023-03-04 21:25:18,163] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,176] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,189] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,200] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,212] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,223] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,234] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,244] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,255] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,265] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,276] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,287] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,299] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,309] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,321] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,333] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,345] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,358] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,369] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,405] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,435] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,456] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,477] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,498] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,518] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,540] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,562] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,583] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,605] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,626] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,648] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,668] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,689] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,710] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,730] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,749] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:25:18,770] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:39:37,028] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:39:37,028] ERROR:DATABASE QUERY FAILED: CREATE DATABASE yellowpages; 
+ error: database "yellowpages" already exists
+
+[2023-03-04 21:39:37,034] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:39:37,034] INFO:DATABASE QUERY SUCCESSFUL: 
+                        CREATE TABLE IF NOT EXISTS business_info (
+                        business_id BIGSERIAL PRIMARY KEY NOT NULL,
+                        name VARCHAR(50),
+                        phone VARCHAR(20), 
+                        price_range INTEGER,
+                        year_in_business INTEGER,
+                        amenities text[],
+                        categories text[],
+                        city_name VARCHAR(50),
+                        city_code VARCHAR(30),
+                        zip_code INTEGER,
+                        updated_at TIMESTAMP,
+                        CONSTRAINT business_info_name_unique UNIQUE (name)
+                        );
+                        CREATE TABLE IF NOT EXISTS access_info (
+                        open_status VARCHAR(30),
+                        website VARCHAR(200),
+                        order_online VARCHAR(30),
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),                                                     
+                        CONSTRAINT access_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS yellowpage_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT yellowpage_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS tripadvisor_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT tripadvisor_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS foursquare_info (
+                        rating FLOAT,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
+                        );
+                        
+[2023-03-04 21:39:42,013] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:39:42,014] ERROR:DATABASE QUERY FAILED: CREATE DATABASE yellowpages; 
+ error: database "yellowpages" already exists
+
+[2023-03-04 21:39:42,019] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 21:39:42,020] INFO:DATABASE QUERY SUCCESSFUL: 
+                        CREATE TABLE IF NOT EXISTS business_info (
+                        business_id BIGSERIAL PRIMARY KEY NOT NULL,
+                        name VARCHAR(50),
+                        phone VARCHAR(20), 
+                        price_range INTEGER,
+                        year_in_business INTEGER,
+                        amenities text[],
+                        categories text[],
+                        city_name VARCHAR(50),
+                        city_code VARCHAR(30),
+                        zip_code INTEGER,
+                        updated_at TIMESTAMP,
+                        CONSTRAINT business_info_name_unique UNIQUE (name)
+                        );
+                        CREATE TABLE IF NOT EXISTS access_info (
+                        open_status VARCHAR(30),
+                        website VARCHAR(200),
+                        order_online VARCHAR(30),
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),                                                     
+                        CONSTRAINT access_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS yellowpage_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT yellowpage_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS tripadvisor_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT tripadvisor_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS foursquare_info (
+                        rating FLOAT,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
+                        );
+                        
+[2023-03-04 22:21:36,994] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:21:36,995] ERROR:DATABASE QUERY FAILED: CREATE DATABASE yellowpages; 
+ error: database "yellowpages" already exists
+
+[2023-03-04 22:21:37,001] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:21:37,002] INFO:DATABASE QUERY SUCCESSFUL: 
+                        CREATE TABLE IF NOT EXISTS business_info (
+                        business_id BIGSERIAL PRIMARY KEY NOT NULL,
+                        name VARCHAR(50),
+                        phone VARCHAR(20), 
+                        price_range INTEGER,
+                        year_in_business INTEGER,
+                        amenities text[],
+                        categories text[],
+                        city_name VARCHAR(50),
+                        city_code VARCHAR(30),
+                        zip_code INTEGER,
+                        updated_at TIMESTAMP,
+                        CONSTRAINT business_info_name_unique UNIQUE (name)
+                        );
+                        CREATE TABLE IF NOT EXISTS access_info (
+                        open_status VARCHAR(30),
+                        website VARCHAR(200),
+                        order_online VARCHAR(30),
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),                                                     
+                        CONSTRAINT access_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS yellowpage_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT yellowpage_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS tripadvisor_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT tripadvisor_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS foursquare_info (
+                        rating FLOAT,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
+                        );
+                        
+[2023-03-04 22:22:01,706] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:22:01,706] ERROR:DATABASE QUERY FAILED: CREATE DATABASE yellowpages; 
+ error: database "yellowpages" already exists
+
+[2023-03-04 22:22:01,712] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:22:01,713] INFO:DATABASE QUERY SUCCESSFUL: 
+                        CREATE TABLE IF NOT EXISTS business_info (
+                        business_id BIGSERIAL PRIMARY KEY NOT NULL,
+                        name VARCHAR(50),
+                        phone VARCHAR(20), 
+                        price_range INTEGER,
+                        year_in_business INTEGER,
+                        amenities text[],
+                        categories text[],
+                        city_name VARCHAR(50),
+                        city_code VARCHAR(30),
+                        zip_code INTEGER,
+                        updated_at TIMESTAMP,
+                        CONSTRAINT business_info_name_unique UNIQUE (name)
+                        );
+                        CREATE TABLE IF NOT EXISTS access_info (
+                        open_status VARCHAR(30),
+                        website VARCHAR(200),
+                        order_online VARCHAR(30),
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),                                                     
+                        CONSTRAINT access_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS yellowpage_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT yellowpage_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS tripadvisor_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT tripadvisor_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS foursquare_info (
+                        rating FLOAT,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
+                        );
+                        
+[2023-03-04 22:22:39,695] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:22:39,695] ERROR:DATABASE QUERY FAILED: CREATE DATABASE yellowpages; 
+ error: database "yellowpages" already exists
+
+[2023-03-04 22:22:39,702] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:22:39,703] INFO:DATABASE QUERY SUCCESSFUL: 
+                        CREATE TABLE IF NOT EXISTS business_info (
+                        business_id BIGSERIAL PRIMARY KEY NOT NULL,
+                        name VARCHAR(50),
+                        phone VARCHAR(20), 
+                        price_range INTEGER,
+                        year_in_business INTEGER,
+                        amenities text[],
+                        categories text[],
+                        city_name VARCHAR(50),
+                        city_code VARCHAR(30),
+                        zip_code INTEGER,
+                        updated_at TIMESTAMP,
+                        CONSTRAINT business_info_name_unique UNIQUE (name)
+                        );
+                        CREATE TABLE IF NOT EXISTS access_info (
+                        open_status VARCHAR(30),
+                        website VARCHAR(200),
+                        order_online VARCHAR(30),
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),                                                     
+                        CONSTRAINT access_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS yellowpage_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT yellowpage_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS tripadvisor_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT tripadvisor_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS foursquare_info (
+                        rating FLOAT,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
+                        );
+                        
+[2023-03-04 22:23:32,493] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:23:32,494] ERROR:DATABASE QUERY FAILED: CREATE DATABASE yellowpages; 
+ error: database "yellowpages" already exists
+
+[2023-03-04 22:23:32,501] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:23:32,502] INFO:DATABASE QUERY SUCCESSFUL: 
+                        CREATE TABLE IF NOT EXISTS business_info (
+                        business_id BIGSERIAL PRIMARY KEY NOT NULL,
+                        name VARCHAR(50),
+                        phone VARCHAR(20), 
+                        price_range INTEGER,
+                        year_in_business INTEGER,
+                        amenities text[],
+                        categories text[],
+                        city_name VARCHAR(50),
+                        city_code VARCHAR(30),
+                        zip_code INTEGER,
+                        updated_at TIMESTAMP,
+                        CONSTRAINT business_info_name_unique UNIQUE (name)
+                        );
+                        CREATE TABLE IF NOT EXISTS access_info (
+                        open_status VARCHAR(30),
+                        website VARCHAR(200),
+                        order_online VARCHAR(30),
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),                                                     
+                        CONSTRAINT access_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS yellowpage_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT yellowpage_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS tripadvisor_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT tripadvisor_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS foursquare_info (
+                        rating FLOAT,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
+                        );
+                        
+[2023-03-04 22:23:45,798] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:23:45,799] ERROR:DATABASE QUERY FAILED: CREATE DATABASE yellowpages; 
+ error: database "yellowpages" already exists
+
+[2023-03-04 22:23:45,805] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:23:45,806] INFO:DATABASE QUERY SUCCESSFUL: 
+                        CREATE TABLE IF NOT EXISTS business_info (
+                        business_id BIGSERIAL PRIMARY KEY NOT NULL,
+                        name VARCHAR(50),
+                        phone VARCHAR(20), 
+                        price_range INTEGER,
+                        year_in_business INTEGER,
+                        amenities text[],
+                        categories text[],
+                        city_name VARCHAR(50),
+                        city_code VARCHAR(30),
+                        zip_code INTEGER,
+                        updated_at TIMESTAMP,
+                        CONSTRAINT business_info_name_unique UNIQUE (name)
+                        );
+                        CREATE TABLE IF NOT EXISTS access_info (
+                        open_status VARCHAR(30),
+                        website VARCHAR(200),
+                        order_online VARCHAR(30),
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),                                                     
+                        CONSTRAINT access_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS yellowpage_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT yellowpage_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS tripadvisor_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT tripadvisor_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS foursquare_info (
+                        rating FLOAT,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
+                        );
+                        
+[2023-03-04 22:26:53,295] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:26:53,296] ERROR:DATABASE QUERY FAILED: CREATE DATABASE yellowpages; 
+ error: database "yellowpages" already exists
+
+[2023-03-04 22:26:53,302] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:26:53,302] INFO:DATABASE QUERY SUCCESSFUL: 
+                        CREATE TABLE IF NOT EXISTS business_info (
+                        business_id BIGSERIAL PRIMARY KEY NOT NULL,
+                        name VARCHAR(50),
+                        phone VARCHAR(20), 
+                        price_range INTEGER,
+                        year_in_business INTEGER,
+                        amenities text[],
+                        categories text[],
+                        city_name VARCHAR(50),
+                        city_code VARCHAR(30),
+                        zip_code INTEGER,
+                        updated_at TIMESTAMP,
+                        CONSTRAINT business_info_name_unique UNIQUE (name)
+                        );
+                        CREATE TABLE IF NOT EXISTS access_info (
+                        open_status VARCHAR(30),
+                        website VARCHAR(200),
+                        order_online VARCHAR(30),
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),                                                     
+                        CONSTRAINT access_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS yellowpage_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT yellowpage_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS tripadvisor_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT tripadvisor_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS foursquare_info (
+                        rating FLOAT,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
+                        );
+                        
+[2023-03-04 22:27:10,482] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:27:10,482] ERROR:DATABASE QUERY FAILED: CREATE DATABASE yellowpages; 
+ error: database "yellowpages" already exists
+
+[2023-03-04 22:27:10,489] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:27:10,489] INFO:DATABASE QUERY SUCCESSFUL: 
+                        CREATE TABLE IF NOT EXISTS business_info (
+                        business_id BIGSERIAL PRIMARY KEY NOT NULL,
+                        name VARCHAR(50),
+                        phone VARCHAR(20), 
+                        price_range INTEGER,
+                        year_in_business INTEGER,
+                        amenities text[],
+                        categories text[],
+                        city_name VARCHAR(50),
+                        city_code VARCHAR(30),
+                        zip_code INTEGER,
+                        updated_at TIMESTAMP,
+                        CONSTRAINT business_info_name_unique UNIQUE (name)
+                        );
+                        CREATE TABLE IF NOT EXISTS access_info (
+                        open_status VARCHAR(30),
+                        website VARCHAR(200),
+                        order_online VARCHAR(30),
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),                                                     
+                        CONSTRAINT access_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS yellowpage_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT yellowpage_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS tripadvisor_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT tripadvisor_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS foursquare_info (
+                        rating FLOAT,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
+                        );
+                        
+[2023-03-04 22:27:40,694] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:27:40,695] ERROR:DATABASE QUERY FAILED: CREATE DATABASE yellowpages; 
+ error: database "yellowpages" already exists
+
+[2023-03-04 22:27:40,701] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:27:40,702] INFO:DATABASE QUERY SUCCESSFUL: 
+                        CREATE TABLE IF NOT EXISTS business_info (
+                        business_id BIGSERIAL PRIMARY KEY NOT NULL,
+                        name VARCHAR(50),
+                        phone VARCHAR(20), 
+                        price_range INTEGER,
+                        year_in_business INTEGER,
+                        amenities text[],
+                        categories text[],
+                        city_name VARCHAR(50),
+                        city_code VARCHAR(30),
+                        zip_code INTEGER,
+                        updated_at TIMESTAMP,
+                        CONSTRAINT business_info_name_unique UNIQUE (name)
+                        );
+                        CREATE TABLE IF NOT EXISTS access_info (
+                        open_status VARCHAR(30),
+                        website VARCHAR(200),
+                        order_online VARCHAR(30),
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),                                                     
+                        CONSTRAINT access_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS yellowpage_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT yellowpage_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS tripadvisor_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT tripadvisor_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS foursquare_info (
+                        rating FLOAT,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
+                        );
+                        
+[2023-03-04 22:27:57,818] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:27:57,818] ERROR:DATABASE QUERY FAILED: CREATE DATABASE yellowpages; 
+ error: database "yellowpages" already exists
+
+[2023-03-04 22:27:57,825] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:27:57,826] INFO:DATABASE QUERY SUCCESSFUL: 
+                        CREATE TABLE IF NOT EXISTS business_info (
+                        business_id BIGSERIAL PRIMARY KEY NOT NULL,
+                        name VARCHAR(50),
+                        phone VARCHAR(20), 
+                        price_range INTEGER,
+                        year_in_business INTEGER,
+                        amenities text[],
+                        categories text[],
+                        city_name VARCHAR(50),
+                        city_code VARCHAR(30),
+                        zip_code INTEGER,
+                        updated_at TIMESTAMP,
+                        CONSTRAINT business_info_name_unique UNIQUE (name)
+                        );
+                        CREATE TABLE IF NOT EXISTS access_info (
+                        open_status VARCHAR(30),
+                        website VARCHAR(200),
+                        order_online VARCHAR(30),
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),                                                     
+                        CONSTRAINT access_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS yellowpage_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT yellowpage_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS tripadvisor_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT tripadvisor_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS foursquare_info (
+                        rating FLOAT,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
+                        );
+                        
+[2023-03-04 22:28:27,455] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:28:27,455] ERROR:DATABASE QUERY FAILED: CREATE DATABASE yellowpages; 
+ error: database "yellowpages" already exists
+
+[2023-03-04 22:28:27,462] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:28:27,463] INFO:DATABASE QUERY SUCCESSFUL: 
+                        CREATE TABLE IF NOT EXISTS business_info (
+                        business_id BIGSERIAL PRIMARY KEY NOT NULL,
+                        name VARCHAR(50),
+                        phone VARCHAR(20), 
+                        price_range INTEGER,
+                        year_in_business INTEGER,
+                        amenities text[],
+                        categories text[],
+                        city_name VARCHAR(50),
+                        city_code VARCHAR(30),
+                        zip_code INTEGER,
+                        updated_at TIMESTAMP,
+                        CONSTRAINT business_info_name_unique UNIQUE (name)
+                        );
+                        CREATE TABLE IF NOT EXISTS access_info (
+                        open_status VARCHAR(30),
+                        website VARCHAR(200),
+                        order_online VARCHAR(30),
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),                                                     
+                        CONSTRAINT access_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS yellowpage_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT yellowpage_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS tripadvisor_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT tripadvisor_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS foursquare_info (
+                        rating FLOAT,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
+                        );
+                        
+[2023-03-04 22:30:54,631] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:30:54,631] ERROR:DATABASE QUERY FAILED: CREATE DATABASE yellowpages; 
+ error: database "yellowpages" already exists
+
+[2023-03-04 22:30:54,642] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:30:54,643] INFO:DATABASE QUERY SUCCESSFUL: 
+                        CREATE TABLE IF NOT EXISTS business_info (
+                        business_id BIGSERIAL PRIMARY KEY NOT NULL,
+                        name VARCHAR(50),
+                        phone VARCHAR(20), 
+                        price_range INTEGER,
+                        year_in_business INTEGER,
+                        amenities text[],
+                        categories text[],
+                        city_name VARCHAR(50),
+                        city_code VARCHAR(30),
+                        zip_code INTEGER,
+                        updated_at TIMESTAMP,
+                        CONSTRAINT business_info_name_unique UNIQUE (name)
+                        );
+                        CREATE TABLE IF NOT EXISTS access_info (
+                        open_status VARCHAR(30),
+                        website VARCHAR(200),
+                        order_online VARCHAR(30),
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),                                                     
+                        CONSTRAINT access_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS yellowpage_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT yellowpage_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS tripadvisor_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT tripadvisor_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS foursquare_info (
+                        rating FLOAT,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
+                        );
+                        
+[2023-03-04 22:32:23,237] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:32:23,237] ERROR:DATABASE QUERY FAILED: CREATE DATABASE yellowpages; 
+ error: database "yellowpages" already exists
+
+[2023-03-04 22:32:23,243] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:32:23,244] INFO:DATABASE QUERY SUCCESSFUL: 
+                        CREATE TABLE IF NOT EXISTS business_info (
+                        business_id BIGSERIAL PRIMARY KEY NOT NULL,
+                        name VARCHAR(50),
+                        phone VARCHAR(20), 
+                        price_range INTEGER,
+                        year_in_business INTEGER,
+                        amenities text[],
+                        categories text[],
+                        city_name VARCHAR(50),
+                        city_code VARCHAR(30),
+                        zip_code INTEGER,
+                        updated_at TIMESTAMP,
+                        CONSTRAINT business_info_name_unique UNIQUE (name)
+                        );
+                        CREATE TABLE IF NOT EXISTS access_info (
+                        open_status VARCHAR(30),
+                        website VARCHAR(200),
+                        order_online VARCHAR(30),
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),                                                     
+                        CONSTRAINT access_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS yellowpage_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT yellowpage_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS tripadvisor_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT tripadvisor_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS foursquare_info (
+                        rating FLOAT,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
+                        );
+                        
+[2023-03-04 22:33:32,679] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:33:32,679] ERROR:DATABASE QUERY FAILED: CREATE DATABASE yellowpages; 
+ error: database "yellowpages" already exists
+
+[2023-03-04 22:33:32,685] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:33:32,686] INFO:DATABASE QUERY SUCCESSFUL: 
+                        CREATE TABLE IF NOT EXISTS business_info (
+                        business_id BIGSERIAL PRIMARY KEY NOT NULL,
+                        name VARCHAR(50),
+                        phone VARCHAR(20), 
+                        price_range INTEGER,
+                        year_in_business INTEGER,
+                        amenities text[],
+                        categories text[],
+                        city_name VARCHAR(50),
+                        city_code VARCHAR(30),
+                        zip_code INTEGER,
+                        updated_at TIMESTAMP,
+                        CONSTRAINT business_info_name_unique UNIQUE (name)
+                        );
+                        CREATE TABLE IF NOT EXISTS access_info (
+                        open_status VARCHAR(30),
+                        website VARCHAR(200),
+                        order_online VARCHAR(30),
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),                                                     
+                        CONSTRAINT access_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS yellowpage_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT yellowpage_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS tripadvisor_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT tripadvisor_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS foursquare_info (
+                        rating FLOAT,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
+                        );
+                        
+[2023-03-04 22:35:08,564] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:08,564] ERROR:DATABASE QUERY FAILED: CREATE DATABASE yellowpages; 
+ error: database "yellowpages" already exists
+
+[2023-03-04 22:35:08,571] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:08,571] INFO:DATABASE QUERY SUCCESSFUL: 
+                        CREATE TABLE IF NOT EXISTS business_info (
+                        business_id BIGSERIAL PRIMARY KEY NOT NULL,
+                        name VARCHAR(50),
+                        phone VARCHAR(20), 
+                        price_range INTEGER,
+                        year_in_business INTEGER,
+                        amenities text[],
+                        categories text[],
+                        city_name VARCHAR(50),
+                        city_code VARCHAR(30),
+                        zip_code INTEGER,
+                        updated_at TIMESTAMP,
+                        CONSTRAINT business_info_name_unique UNIQUE (name)
+                        );
+                        CREATE TABLE IF NOT EXISTS access_info (
+                        open_status VARCHAR(30),
+                        website VARCHAR(200),
+                        order_online VARCHAR(30),
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),                                                     
+                        CONSTRAINT access_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS yellowpage_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT yellowpage_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS tripadvisor_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT tripadvisor_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS foursquare_info (
+                        rating FLOAT,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
+                        );
+                        
+[2023-03-04 22:35:11,770] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:11,783] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:11,796] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:11,808] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:11,820] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:11,832] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:11,845] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:11,857] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:11,869] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:11,882] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:11,894] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:11,907] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:11,920] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:11,934] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:11,948] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:11,962] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:11,978] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:11,992] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:12,005] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:12,018] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:12,031] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:12,044] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:12,056] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:12,069] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:12,081] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:12,094] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:12,109] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:12,122] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:12,135] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:12,149] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:12,160] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:12,172] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:12,184] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:12,196] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:12,208] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:12,220] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:12,232] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,277] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,291] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,303] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,316] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,327] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,340] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,353] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,366] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,378] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,391] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,404] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,417] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,431] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,443] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,457] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,470] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,484] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,498] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,511] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,523] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,535] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,548] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,561] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,573] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,585] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,597] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,609] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,622] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,634] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,647] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,658] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,670] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,682] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,693] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,705] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,717] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:15,728] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,032] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,044] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,058] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,071] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,084] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,097] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,110] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,123] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,136] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,150] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,164] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,177] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,189] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,203] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,216] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,231] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,245] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,260] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,274] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,286] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,299] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,311] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,325] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,338] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,351] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,364] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,377] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,390] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,403] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,417] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,429] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,441] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,452] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,464] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,476] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,488] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:18,499] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,418] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,432] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,444] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,458] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,471] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,486] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,498] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,512] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,524] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,537] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,550] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,565] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,578] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,591] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,603] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,616] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,636] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,655] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,675] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,693] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,708] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,721] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,735] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,748] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,762] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,775] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,788] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,801] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,813] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,826] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,839] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,851] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,863] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:21,875] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:24,560] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:24,572] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:24,584] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:24,595] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:24,607] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:24,618] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:24,630] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:24,642] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:24,653] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:24,665] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:24,677] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:24,688] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:24,700] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:24,712] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:24,723] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:27,930] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:27,943] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:27,955] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:27,967] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:27,981] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:27,995] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,010] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,025] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,040] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,053] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,066] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,079] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,093] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,106] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,119] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,133] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,147] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,160] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,173] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,186] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,198] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,210] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,223] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,236] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,250] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,263] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,276] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,290] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,304] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,317] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,329] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,341] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,353] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,364] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,377] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,389] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:28,400] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:30,932] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:30,944] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:30,956] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:30,969] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:30,982] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:30,995] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,008] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,023] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,037] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,051] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,064] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,078] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,090] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,103] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,116] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,128] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,141] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,154] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,167] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,180] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,194] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,206] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,220] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,232] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,245] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,258] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,271] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,284] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,296] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,308] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,321] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,333] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,344] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:31,355] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:49,640] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:49,640] ERROR:DATABASE QUERY FAILED: CREATE DATABASE yellowpages; 
+ error: database "yellowpages" already exists
+
+[2023-03-04 22:35:49,647] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:49,648] INFO:DATABASE QUERY SUCCESSFUL: 
+                        CREATE TABLE IF NOT EXISTS business_info (
+                        business_id BIGSERIAL PRIMARY KEY NOT NULL,
+                        name VARCHAR(50),
+                        phone VARCHAR(20), 
+                        price_range INTEGER,
+                        year_in_business INTEGER,
+                        amenities text[],
+                        categories text[],
+                        city_name VARCHAR(50),
+                        city_code VARCHAR(30),
+                        zip_code INTEGER,
+                        updated_at TIMESTAMP,
+                        CONSTRAINT business_info_name_unique UNIQUE (name)
+                        );
+                        CREATE TABLE IF NOT EXISTS access_info (
+                        open_status VARCHAR(30),
+                        website VARCHAR(200),
+                        order_online VARCHAR(30),
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),                                                     
+                        CONSTRAINT access_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS yellowpage_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT yellowpage_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS tripadvisor_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT tripadvisor_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS foursquare_info (
+                        rating FLOAT,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
+                        );
+                        
+[2023-03-04 22:35:53,743] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:53,756] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:53,767] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:53,783] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:53,800] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:53,819] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:53,837] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:53,854] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:53,868] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:53,880] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:53,893] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:53,905] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:53,918] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:53,932] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:53,948] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:53,964] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:53,981] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:53,999] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:54,016] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:54,033] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:54,051] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:54,068] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:54,085] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:54,102] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:54,119] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:54,136] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:54,153] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:54,170] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:54,186] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:54,198] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:54,209] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:54,221] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:54,232] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:54,243] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:54,255] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:54,266] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:54,278] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:57,917] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:57,929] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:57,941] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:57,954] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:57,967] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:57,979] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:57,992] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,007] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,022] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,035] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,047] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,059] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,071] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,083] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,095] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,108] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,120] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,131] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,143] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,156] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,168] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,181] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,194] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,206] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,217] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,229] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,241] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,254] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,266] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,280] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,292] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,304] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,320] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,336] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,352] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,368] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:35:58,384] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,414] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,426] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,439] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,451] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,463] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,476] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,488] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,501] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,516] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,530] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,543] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,557] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,569] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,581] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,594] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,606] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,618] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,630] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,643] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,654] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,666] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,677] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,688] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,700] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,713] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,725] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,737] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,749] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,761] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,774] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,786] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,798] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,809] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,821] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,832] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,843] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:01,855] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,217] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,229] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,241] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,254] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,267] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,279] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,293] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,304] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,318] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,333] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,348] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,362] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,375] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,387] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,399] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,411] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,423] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,436] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,449] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,461] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,475] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,487] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,500] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,512] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,525] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,538] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,550] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,563] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,576] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,589] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,601] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,612] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,623] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,634] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,646] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,657] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:04,669] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,218] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,230] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,242] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,254] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,266] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,279] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,290] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,303] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,315] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,328] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,343] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,357] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,371] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,384] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,397] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,409] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,421] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,434] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,447] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,461] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,474] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,487] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,500] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,512] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,525] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,538] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,552] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,564] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,578] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,590] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,603] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,615] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,625] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:08,636] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,352] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,366] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,379] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,391] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,403] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,416] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,427] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,439] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,451] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,464] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,476] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,490] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,504] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,517] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,529] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,546] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,563] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,577] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,589] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,601] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,619] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,636] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,648] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,661] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,674] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,687] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,700] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,712] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,725] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,739] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,750] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,762] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,774] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:11,786] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:14,822] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:14,834] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:14,847] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:14,859] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:14,871] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:14,884] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:14,896] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:14,909] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:14,926] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:14,943] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:14,959] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:14,977] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:14,994] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,010] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,021] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,035] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,049] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,062] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,074] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,086] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,098] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,109] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,122] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,135] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,148] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,160] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,172] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,183] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,195] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,208] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,220] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,231] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,243] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,254] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,266] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,277] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:15,287] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:17,986] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:17,999] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,011] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,022] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,035] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,048] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,060] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,072] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,084] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,096] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,108] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,121] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,133] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,146] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,158] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,171] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,185] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,200] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,214] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,227] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,240] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,253] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,266] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,279] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,291] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,304] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,317] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,330] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,343] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,356] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,368] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,381] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,394] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,406] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,417] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,429] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:18,440] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,449] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,462] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,474] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,486] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,499] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,511] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,525] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,537] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,549] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,561] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,574] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,587] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,599] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,611] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,622] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,634] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,647] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,661] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,675] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,691] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,704] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,717] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,732] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,744] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,757] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,769] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,782] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,795] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,809] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,822] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,834] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,845] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,857] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:21,869] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:24,772] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:24,784] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:24,796] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:24,808] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:24,821] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:24,835] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:24,852] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:24,869] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:24,887] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:24,904] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:24,922] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:24,939] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:24,957] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:24,974] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:24,987] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:24,999] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:25,012] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:25,025] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:25,037] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:25,049] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:25,063] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:25,077] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:25,091] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:25,105] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:25,118] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:25,130] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:25,144] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:25,157] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:25,170] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:25,183] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:25,196] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:25,208] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:25,219] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:25,231] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:28,771] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:28,785] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:28,797] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:28,810] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:28,822] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:28,834] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:28,845] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:28,858] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:28,871] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:28,886] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:28,899] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:28,917] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:28,935] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:28,954] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:28,972] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:28,990] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:29,008] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:29,026] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:29,044] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:29,063] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:29,080] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:29,094] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:29,112] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:29,127] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:29,144] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:29,159] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:29,173] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:29,187] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:29,200] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:29,212] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:29,224] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:29,236] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:29,247] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:29,258] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,372] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,384] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,396] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,408] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,421] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,435] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,448] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,462] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,474] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,488] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,501] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,516] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,529] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,542] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,556] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,569] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,582] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,595] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,609] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,623] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,635] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,648] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,660] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,674] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,733] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,748] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,763] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,776] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,790] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,804] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,817] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,831] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,844] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-04 22:36:32,855] INFO:DATABASE CONNECTION SUCCESSFUL
