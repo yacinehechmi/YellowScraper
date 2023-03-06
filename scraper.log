@@ -1574,3 +1574,1700 @@
 [2023-03-04 22:36:32,831] INFO:DATABASE CONNECTION SUCCESSFUL
 [2023-03-04 22:36:32,844] INFO:DATABASE CONNECTION SUCCESSFUL
 [2023-03-04 22:36:32,855] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:54:21,065] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:21,065] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,150] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,152] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,154] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,157] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,160] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,162] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,164] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,166] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,168] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,170] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,172] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,175] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,176] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,178] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,179] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,181] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,183] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,185] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,186] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,189] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,191] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,192] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,194] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,196] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,198] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,199] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,201] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,202] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,204] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,206] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,207] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,208] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,209] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,211] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,212] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,213] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:24,215] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,650] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,652] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,653] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,654] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,656] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,657] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,659] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,660] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,661] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,663] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,664] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,666] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,668] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,669] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,671] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,672] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,674] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,675] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,677] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,678] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,680] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,681] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,683] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,684] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,686] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,688] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,689] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,691] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,692] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,694] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,695] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,696] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,697] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,698] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,698] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,699] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:26,700] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,577] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,578] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,580] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,581] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,583] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,584] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,586] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,587] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,589] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,590] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,591] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,593] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,594] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,595] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,597] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,598] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,599] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,600] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,601] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,602] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,604] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,605] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,606] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,608] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,609] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,610] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,612] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,613] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,614] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,616] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,617] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,617] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,618] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,619] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,620] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,621] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:54:30,621] ERROR:DATABASE CONNECTION FAILED : could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+
+[2023-03-06 15:55:17,188] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:17,193] ERROR:DATABASE QUERY FAILED: CREATE DATABASE yellowpages; 
+ error: database "yellowpages" already exists
+
+[2023-03-06 15:55:17,214] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:17,219] INFO:DATABASE QUERY SUCCESSFUL: 
+                        CREATE TABLE IF NOT EXISTS business_info (
+                        business_id BIGSERIAL PRIMARY KEY NOT NULL,
+                        name VARCHAR(50),
+                        phone VARCHAR(20), 
+                        price_range INTEGER,
+                        year_in_business INTEGER,
+                        amenities text[],
+                        categories text[],
+                        city_name VARCHAR(50),
+                        city_code VARCHAR(30),
+                        zip_code INTEGER,
+                        updated_at TIMESTAMP,
+                        CONSTRAINT business_info_name_unique UNIQUE (name)
+                        );
+                        CREATE TABLE IF NOT EXISTS access_info (
+                        open_status VARCHAR(30),
+                        website VARCHAR(200),
+                        order_online VARCHAR(30),
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),                                                     
+                        CONSTRAINT access_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS yellowpage_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT yellowpage_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS tripadvisor_info (
+                        rating FLOAT,
+                        rating_count INTEGER,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT tripadvisor_unique_id_fk UNIQUE (business_id)
+                        );
+                        CREATE TABLE IF NOT EXISTS foursquare_info (
+                        rating FLOAT,
+                        updated_at TIMESTAMP,
+                        business_id BIGINT REFERENCES business_info(business_id),
+                        CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
+                        );
+                        
+[2023-03-06 15:55:21,430] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,488] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,503] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,514] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,524] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,536] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,547] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,558] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,569] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,580] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,593] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,604] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,616] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,627] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,639] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,650] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,661] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,673] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,684] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,694] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,705] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,716] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,727] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,738] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,750] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,763] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,776] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,789] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,800] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,811] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,822] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,833] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,842] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,853] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,863] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,874] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:21,884] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,588] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,599] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,610] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,621] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,632] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,642] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,654] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,664] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,676] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,686] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,697] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,708] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,718] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,729] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,739] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,749] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,759] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,769] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,779] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,790] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,800] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,810] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,820] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,831] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,844] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,856] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,890] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,925] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,940] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,952] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,962] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,972] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,982] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:24,992] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:25,002] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:25,012] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:25,021] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,302] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,313] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,324] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,335] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,346] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,357] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,367] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,378] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,389] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,400] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,411] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,421] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,432] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,443] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,454] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,464] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,475] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,485] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,496] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,506] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,517] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,527] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,537] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,548] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,559] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,571] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,583] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,595] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,607] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,618] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,629] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,640] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,650] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,660] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,670] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,681] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:27,690] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:29,886] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:29,900] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:29,915] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:29,926] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:29,936] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:29,947] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:29,958] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:29,970] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:29,980] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:29,991] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,001] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,011] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,023] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,034] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,046] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,057] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,068] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,079] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,090] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,101] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,111] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,123] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,133] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,144] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,154] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,168] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,181] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,193] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,204] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,215] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,226] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,237] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,246] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:30,257] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,362] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,374] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,385] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,396] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,407] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,417] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,428] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,439] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,450] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,461] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,472] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,484] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,496] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,507] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,518] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,528] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,539] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,573] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,608] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,644] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,671] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,685] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,701] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,715] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,730] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,746] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,762] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,799] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,819] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,833] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,844] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,855] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,866] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,879] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,889] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,899] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:34,908] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,566] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,578] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,589] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,601] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,612] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,623] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,633] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,645] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,656] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,667] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,678] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,689] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,700] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,711] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,722] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,733] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,744] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,755] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,767] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,779] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,790] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,801] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,812] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,823] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,834] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,845] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,858] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,875] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,889] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,900] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,911] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,920] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,931] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,941] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,951] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,961] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:37,971] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,115] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,127] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,138] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,151] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,161] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,173] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,184] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,194] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,205] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,216] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,227] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,239] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,249] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,260] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,271] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,282] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,293] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,304] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,317] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,327] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,339] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,350] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,361] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,372] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,383] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,393] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,403] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,415] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,427] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,441] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,454] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,464] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,474] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:40,484] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,428] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,439] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,450] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,460] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,471] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,483] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,493] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,506] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,517] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,528] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,540] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,551] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,561] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,575] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,590] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,601] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,612] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,623] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,634] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,645] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,657] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,669] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,683] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,695] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,707] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,717] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,728] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,739] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,750] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,760] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,771] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,780] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,790] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:44,799] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,353] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,365] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,375] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,387] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,398] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,408] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,419] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,430] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,441] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,455] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,469] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,479] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,492] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,503] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,514] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,525] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,536] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,547] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,557] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,568] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,580] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,591] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,602] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,613] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,624] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,635] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,665] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,682] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,695] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,709] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,719] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,730] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,742] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:47,755] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:49,895] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:49,907] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:49,919] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:49,930] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:49,943] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:49,953] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:49,964] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:49,976] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:49,987] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:49,997] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,011] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,022] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,033] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,044] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,056] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,068] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,080] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,092] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,103] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,114] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,124] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,136] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,146] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,158] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,169] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,179] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,192] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,228] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,256] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,281] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,296] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,310] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,324] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:50,337] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,666] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,677] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,689] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,700] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,711] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,723] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,734] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,745] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,756] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,771] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,785] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,799] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,810] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,821] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,832] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,843] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,853] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,865] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,876] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,887] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,897] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,908] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,919] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,930] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,941] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,952] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,964] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,975] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,986] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:52,997] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:53,008] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:53,042] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:53,079] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:53,100] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,659] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,671] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,685] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,701] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,713] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,724] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,735] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,747] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,757] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,769] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,780] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,792] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,803] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,814] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,826] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,837] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,850] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,862] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,873] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,885] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,897] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,909] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,920] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,931] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,964] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:55,992] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:56,014] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:56,030] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:56,046] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:56,064] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:56,075] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:56,084] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:56,095] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:56,105] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:56,136] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:56,154] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:59,804] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:59,815] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:59,826] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:59,837] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:59,848] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:59,859] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:59,870] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:59,881] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:59,892] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:59,904] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:59,915] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:59,927] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:59,938] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:59,950] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:59,962] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:59,973] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:59,985] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:55:59,997] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:00,008] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:00,020] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:00,030] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:00,041] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:00,053] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:00,065] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:00,075] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:00,086] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:00,096] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:00,108] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:00,121] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:00,133] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:00,145] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:00,155] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:00,165] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,537] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,547] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,558] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,585] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,606] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,628] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,650] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,671] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,691] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,708] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,727] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,745] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,761] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,777] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,794] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,811] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,828] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,845] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,864] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,879] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,895] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,909] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,922] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,935] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,947] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,960] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,973] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,986] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:02,998] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:03,011] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:03,024] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:03,036] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:03,048] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,375] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,386] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,398] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,410] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,421] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,432] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,444] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,456] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,469] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,483] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,522] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,540] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,554] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,566] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,578] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,590] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,603] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,616] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,629] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,641] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,654] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,667] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,680] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,692] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,704] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,719] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,734] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,746] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,779] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,798] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,812] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,825] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:05,836] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,757] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,769] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,780] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,791] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,801] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,812] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,822] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,833] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,844] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,855] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,866] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,876] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,889] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,901] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,914] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,926] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,937] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,949] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,959] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,970] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,980] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:08,991] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:09,002] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:09,012] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:09,023] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:09,033] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:09,045] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:09,057] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:09,071] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:09,083] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:09,094] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:09,105] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:09,117] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:13,739] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:13,750] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:13,760] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:13,771] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:13,782] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:13,793] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:13,804] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:13,816] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:13,828] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:13,862] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:13,899] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:13,915] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:13,927] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:13,953] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:13,968] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:13,981] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:13,995] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:14,010] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:14,022] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:14,034] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:14,047] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:14,059] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:14,071] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:14,084] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:14,095] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:14,108] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:14,121] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:14,133] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:14,145] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:14,157] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:14,168] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:14,179] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:14,190] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:14,201] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:14,212] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:14,224] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:14,235] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,101] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,112] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,123] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,134] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,144] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,155] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,166] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,176] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,188] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,199] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,210] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,221] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,233] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,244] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,256] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,267] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,300] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,329] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,348] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,389] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,418] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,436] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,453] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,471] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,484] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,496] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,506] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,518] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,529] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:18,540] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,554] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,567] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,577] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,588] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,600] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,611] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,621] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,632] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,645] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,656] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,667] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,679] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,690] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,700] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,711] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,723] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,735] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,746] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,757] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,769] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,780] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,793] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,806] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,850] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,869] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,884] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,900] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,914] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,928] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,942] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,955] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,969] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:20,982] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,408] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,420] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,430] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,441] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,452] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,463] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,473] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,484] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,494] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,505] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,517] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,551] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,591] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,609] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,621] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,634] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,646] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,659] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,670] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,682] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,693] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,705] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,717] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,730] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,742] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,753] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,766] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,780] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,794] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,808] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,821] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,831] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:23,843] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:26,887] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:26,898] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:26,910] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:26,922] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:26,934] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:26,946] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:26,958] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:26,970] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:26,983] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:26,994] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,005] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,016] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,053] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,077] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,090] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,104] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,116] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,126] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,139] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,151] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,162] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,173] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,184] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,196] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,208] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,220] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,232] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,243] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,255] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,266] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,278] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,318] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:27,354] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,592] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,603] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,614] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,625] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,637] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,648] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,659] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,670] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,682] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,692] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,702] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,712] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,723] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,762] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,803] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,826] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,849] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,871] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,887] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,901] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,916] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,930] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,945] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,959] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,975] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:30,989] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:31,004] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:31,018] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:31,034] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:31,048] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:31,063] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:31,076] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:31,088] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,452] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,465] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,477] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,490] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,503] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,516] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,559] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,599] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,618] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,632] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,643] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,653] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,664] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,675] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,687] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,698] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,709] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,719] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,731] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,746] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,758] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,769] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,779] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,791] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,801] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,812] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,823] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,834] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,846] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,858] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,871] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,884] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,894] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:33,905] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,382] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,394] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,406] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,417] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,429] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,440] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,451] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,462] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,499] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,530] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,545] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,558] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,571] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,585] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,598] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,612] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,624] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,637] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,650] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,663] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,677] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,690] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,703] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,717] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,731] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,744] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,758] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,772] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,786] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,799] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,812] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,836] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,853] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:36,867] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:38,953] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:38,976] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:38,989] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,001] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,012] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,023] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,034] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,045] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,057] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,069] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,082] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,095] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,107] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,117] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,128] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,139] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,150] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,161] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,172] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,183] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,193] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,203] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,213] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,224] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,234] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,244] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,255] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,265] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,275] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,285] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,295] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,328] INFO:DATABASE CONNECTION SUCCESSFUL
+[2023-03-06 15:56:39,347] INFO:DATABASE CONNECTION SUCCESSFUL
