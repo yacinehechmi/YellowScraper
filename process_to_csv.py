@@ -2,7 +2,7 @@ import pandas as pd
 import os
 import datetime as dt
 
-# work in progress for this script please note that its not used in the main script
+# work in progress for this script please note that it's not used in the main script
 
 
 # fixing to same length the categories and amenities lists
