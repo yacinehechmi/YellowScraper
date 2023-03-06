@@ -24,12 +24,13 @@ def fetch_page(num_of_page, city):
         print(city)
         user_agent = ua.random
         headers = {
-                "Accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
-                "Accept-Encoding":"gzip, deflate, br",
-                "Accept-Language":"en-US,en;q=0.9",
-                "Connection":"keep-alive",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,"
+                          "image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+                "Accept-Encoding": "gzip, deflate, br",
+                "Accept-Language": "en-US,en;q=0.9",
+                "Connection": "keep-alive",
                 "User-Agent": user_agent,
-                "Cache-Control":"max-age=0, no-cache, no-store",
+                "Cache-Control": "max-age=0, no-cache, no-store",
                 "Upgrade-Insecure-Requests": "1"
             }
         page = requests.get(f"https://www.yellowpages.com{city}", headers=headers, params={
@@ -38,6 +39,7 @@ def fetch_page(num_of_page, city):
         # logger.info(f"GOT PAGE {num_of_page}")
         page_content = page.content
         soup = BeautifulSoup(page_content, 'html.parser')
+        # scrape_clean_strore will take relevent data from { soup }, clean it, and store it into a database { db }
         scrape_clean_store(soup, db)
         return soup
     except requests.HTTPError as exception:
@@ -54,19 +56,19 @@ def scrape_clean_store(soup, db):
     for i, j in enumerate(card):
         # extantiate class business and assign soup content to class attributes
         business = Business(
-            j.find('a', {'class': 'business-name'}), #name
-            j.find('div', {'class': 'phone'}), #phone
-            j.find('div', {'class': 'locality'}), #locality
-            j.find('div', {'class': 'price-range'}), #price_range
-            j.find('div', {'class': 'open-status'}), #open_status
-            j.find('div', {'class': 'result-rating'}), #rating
-            j.find('div', {'class': 'count'}), #rating_count
-            j.find('div', {'class': 'ratings'}), #tripadvisor
-            j.find('div', {'class': 'ratings'}), #foursquare_rating
-            j.find_all("div", {"class": "categories"}), #categories
-            j.find_all("div", {"class": "amenities-info"}), #amenities
-            j.find('a', {'class': 'track-visit-website', 'href': True}), #website
-            j.find('a', {'class': 'order-online', 'href': True}), #order_online
+            j.find('a', {'class': 'business-name'}),  # name
+            j.find('div', {'class': 'phone'}),  # phone
+            j.find('div', {'class': 'locality'}),  # locality
+            j.find('div', {'class': 'price-range'}),  # price_range
+            j.find('div', {'class': 'open-status'}),  # open_status
+            j.find('div', {'class': 'result-rating'}),  # rating
+            j.find('div', {'class': 'count'}),  # rating_count
+            j.find('div', {'class': 'ratings'}),  # tripadvisor
+            j.find('div', {'class': 'ratings'}),  # foursquare_rating
+            j.find_all("div", {"class": "categories"}),  # categories
+            j.find_all("div", {"class": "amenities-info"}),  # amenities
+            j.find('a', {'class': 'track-visit-website', 'href': True}),  # website
+            j.find('a', {'class': 'order-online', 'href': True}),  # order_online
             j.find('div', {'class': 'number'}), #year_in_business
         )
         # values to be stored in business_info table
@@ -109,7 +111,8 @@ def scrape_clean_store(soup, db):
             tripadvisor_info,
             foursquare_info
         ]
-        # connect to { db } & upsert { records } into tables business_info, access_info, yellowpages_info, tripadvisor_info, foursquare_info
+        # connect to { db } & upsert { records } into tables business_info,
+        # access_info, yellowpages_info, tripadvisor_info, foursquare_info
 
         do_upsert(db, records)
         print(f'{i} time consumed : {time.time() - start}')
@@ -119,22 +122,14 @@ def main():
     create_db_and_tables(db)   # connect to postgresql server create tables
     index = 0
     while index < len(cities):
-        for j in range(number_of_pages):
-
+        for j in enumerate(number_of_pages):
             soup = fetch_page(j, list(cities[index].keys())[0])
             # fetch_page HTTP GET request to www.yellowpage.com/{ city }/restaurants/?{ i }
             # find nearby cities and append them to cities list
             find_nearby_cities(soup.find('section', {"class": "nearby-cities"}), cities)
-
         index += 1
 
-    print(cities)
-
-
-
-            # scrape_clean_strore will take relevent data from { soup }, clean it, and store it into a database { db }
-
-    # clean_csv(csv_file_name) # will remove duplicates from csv
+    # clean_csv(csv_file_name) will remove duplicates from csv
 
 if __name__ == "__main__":
     logger = logging
