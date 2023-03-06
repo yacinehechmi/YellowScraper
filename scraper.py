@@ -4,6 +4,7 @@ import time
 from dotenv import load_dotenv
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
+
 # project mudules
 from classBusiness import Business
 from helpers import find_nearby_cities
@@ -122,7 +123,7 @@ def main():
     create_db_and_tables(db)   # connect to postgresql server create tables
     index = 0
     while index < len(cities):
-        for j in enumerate(number_of_pages):
+        for j in range(number_of_pages):
             soup = fetch_page(j, list(cities[index].keys())[0])
             # fetch_page HTTP GET request to www.yellowpage.com/{ city }/restaurants/?{ i }
             # find nearby cities and append them to cities list
