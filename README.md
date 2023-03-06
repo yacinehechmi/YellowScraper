@@ -1,2 +1,3 @@
 # yellow-scraper
-a python scraper that looks for cities and number of pages for www.yellowpages.com
+### a python script that scrapes restaurant listing pages in yellowpages.com
+

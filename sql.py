@@ -21,19 +21,17 @@ def do_upsert(db, records=None):
         logger.info('DATABASE CONNECTION SUCCESSFUL')
         cur = conn.cursor()
         try:
+            #  run first query to insert business_info data and get back the id of a record
+            #  and use that id to proceed inserting to the other related tables
             cur.execute(upsert_into_tables[0], records[0])
-            # print(upsert_into_tables[0], records[0])
             business_id = cur.fetchone()[0]
             records = [item+(business_id,) for item in records[1:]]
             records_index = 0
             for statement in upsert_into_tables[1:]:
                 try:
-                    # print(statement, records[records_index])
                     cur.execute(statement, records[records_index])
-                    # print(records)
                     records_index += 1
-                    # print(statement)
-                    # logger.info(f' DATABASE QUERY SUCCESSFUL: {statement}')
+                    logger.info(f' DATABASE QUERY SUCCESSFUL: {statement}')
                 except (Exception, psycopg2.DatabaseError) as error:
                     logger.error(f'DATABASE QUERY FAILED: {statement} \n error: {error}')
                     print(error)

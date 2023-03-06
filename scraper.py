@@ -129,7 +129,6 @@ def main():
             find_nearby_cities(soup.find('section', {"class": "nearby-cities"}), cities)
         index += 1
 
-    # clean_csv(csv_file_name) will remove duplicates from csv
 
 if __name__ == "__main__":
     logger = logging
