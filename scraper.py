@@ -43,8 +43,15 @@ def fetch_page(num_of_page, city):
         # scrape_clean_strore will take relevent data from { soup }, clean it, and store it into a database { db }
         scrape_clean_store(soup, db)
         return soup
-    except requests.HTTPError as exception:
-        logger.error(f"FAILED AT PARAMS: num_of_page:{num_of_page} city:{city}")
+    except requests.HTTPError as errHTTP:
+        logger.error(f" GOT {errHTTP} AT: num_of_page:{num_of_page} city:{city}")
+    except requests.RequestException as errREQ:
+        logger.error(f"GOT {errREQ} AT: num_of_page:{num_of_page} city:{city}")
+    except requests.ConnectionError as errCON:
+        logger.error(f"GOT {errCON} AT: num_of_page:{num_of_page} city:{city}")
+    except requests.Timeout as errTIMEOUT:
+        logger.error(f"GOT {errTIMEOUT} AT: num_of_page:{num_of_page} city:{city}")
+
 
 def scrape_clean_store(soup, db):
     # get all elements with tag: div and class: info
