@@ -7,6 +7,7 @@ logger = logging.getLogger(__name__)
 # set up the connection for given database name 'db' to a postgresql server
 load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 
+
 def do_upsert(db, records=None):
     try:
         conn = psycopg2.connect(
@@ -41,7 +42,7 @@ def do_upsert(db, records=None):
         conn.close()
     except(Exception, psycopg2.DatabaseError) as error:
         print(error)
-        logger.error(f'DATABASE CONNECTION FAILED : {error}')
+        logger.error(f'DATABASE CONNECTION FAILED: {error}')
 
 # even better
 def create_tables(db):
@@ -64,6 +65,8 @@ def create_tables(db):
     except(Exception, psycopg2.DatabaseError) as error:
         print(error)
         logger.error(f'DATABASE CONNECTION FAILED : {error}')
+
+
 def create_db():
     try:
         conn = psycopg2.connect(
