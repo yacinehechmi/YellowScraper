@@ -21,7 +21,7 @@ csv_file_name = config['csv_file_name']
 def scrape_clean_store(soup, db):
     # get all elements with tag: div and class: info
     # card = soup.find_all('div', _class="v-card")
-    start = time.time()
+
     # print(soup.find_all('div', {"class": "info"}))
     card = soup.find_all('div', {"class": "info"})
 
@@ -42,7 +42,7 @@ def scrape_clean_store(soup, db):
             j.find_all("div", {"class": "amenities-info"}),  # amenities
             j.find('a', {'class': 'track-visit-website', 'href': True}),  # website
             j.find('a', {'class': 'order-online', 'href': True}),  # order_online
-            j.find('div', {'class': 'number'}), #year_in_business
+            j.find('div', {'class': 'number'}),  # year_in_business
         )
         # values to be stored in business_info table
         business_info = (
@@ -88,7 +88,9 @@ def scrape_clean_store(soup, db):
         # access_info, yellowpages_info, tripadvisor_info, foursquare_info
 
         do_upsert(db, records)
-        print(f'{i} time consumed : {time.time() - start}')
+        # print(f'{i} time consumed : {time.time() - start}'
+
+
 def fetch_page(num_of_page, city):
     try:
         ua = UserAgent()
@@ -109,22 +111,23 @@ def fetch_page(num_of_page, city):
         logger.error(f" GOT {errHTTP} AT: num_of_page:{num_of_page} city:{city}")
 
 
-
 def main():
     index = 0
+    run_one_time = False
     while index < len(cities):
-        print(cities)
-        for j in range(number_of_pages):
+        for j in range(1, number_of_pages):
             page = fetch_page(j, list(cities[index].keys())[0])
             page_content = page.content
             soup = BeautifulSoup(page_content, 'html.parser')
-            if j == 1:
+            if not run_one_time:
+                if find_nearby_cities(soup.find('section', {"class": "nearby-cities"}), cities):
+                    run_one_time = True
                 # find nearby cities and append them to cities list
-                find_nearby_cities(soup.find('section', {"class": "nearby-cities"}), cities)
+
             scrape_clean_store(soup, db)
             # fetch_page HTTP GET request to www.yellowpage.com/{ city }/restaurants/?{ i }
         index += 1
-
+    logger.info([city.values() for city in cities])
 
 if __name__ == "__main__":
     logger = logging
