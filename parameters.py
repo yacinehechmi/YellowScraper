@@ -2,7 +2,7 @@ config = {
     "db": "yellowpages",
     "csv_file_name": 'busi.csv',
     "number_of_pages": 2,
-    "cities": [{'/los-angeles-ca/retaurants': False},]
+    "cities": [{'/los-angeles-ca/retaurants': False}]
 }
 create_queries = {
     "create_db": f"""CREATE DATABASE {config['db']};""",
