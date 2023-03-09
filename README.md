@@ -1,7 +1,6 @@
-# yellow-scraper 
-- This is a python scraper that retrieves restaurant listings data from yellowpages.com and stores it in a postgres database
-The scraper take in as parameters the number of page(s) to fetch in each city, and a list of city(s) desired to be fetched
-- The scraper can also discover nearby cities by scraping the nearby cities section.
+# yellow-scraper
+- This project is part of my studies of Data Engineering, This is a python scraper that retrieves restaurant listings data from yellowpages.com and stores it in a postgres database
+The scraper fetches data based on a list of city(s) and the number of page(s) requested for each city, it can also discover nearby cities by scraping the nearby cities section.
 ## Prerequisites
 - Python 3.x
 - Conda
@@ -11,7 +10,8 @@ The scraper take in as parameters the number of page(s) to fetch in each city, a
 1) Clone the repo `git clone https://github.com/yacine717/YellowScraper`
 2) Create conda environment `conda env create --name my_project --file environment.yml`
 3) Activate conda environment `conda activate my_project` 
-4) Run the script `python3 scraper.py`
+4) Run to create database and database tables `python3 init_sql.py`
+5) Run the script `python3 scraper.py`
 
 ## database diagram
 the data is stored in a normalized for to avoid data redundancy in the following tables:
@@ -47,7 +47,7 @@ the data is stored in a normalized for to avoid data redundancy in the following
 ![Database Diagram](assets/database_model.png)
 ## Notes
 - the csv processing part of this project is still in progress 
-- if you encounter any issues while running the scraper, please create a new issue in the repository.
+- if you encounter any issues while running the project, please create a new issue in the repository.
 
 ## Acknowledgments
 Special thanks to my fellow engineers at the dataGarage discord community who helped in the making of this project.
