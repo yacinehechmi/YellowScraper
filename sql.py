@@ -32,7 +32,6 @@ def do_upsert(db, records=None):
                 try:
                     cur.execute(statement, records[records_index])
                     records_index += 1
-                    logger.info(f' DATABASE QUERY SUCCESSFUL: {statement}')
                 except (Exception, psycopg2.DatabaseError) as error:
                     logger.error(f'DATABASE QUERY FAILED: {statement} \n error: {error}')
                     print(error)
@@ -44,9 +43,8 @@ def do_upsert(db, records=None):
         print(error)
         logger.error(f'DATABASE CONNECTION FAILED : {error}')
 
-
-# good
-def create_db_and_tables(db):
+# even better
+def create_tables(db):
     try:
         conn = psycopg2.connect(
             host='localhost',
@@ -56,25 +54,35 @@ def create_db_and_tables(db):
             port='5432',
         )
         conn.autocommit = True
-        logger.info('DATABASE CONNECTION SUCCESSFUL')
         cur = conn.cursor()
-        if db:
-            try:
-                cur.execute(create_queries["create_tables"])
-                print(create_queries["create_tables"])
-                logger.info(f'DATABASE QUERY SUCCESSFUL: {create_queries["create_tables"]}')
-            except (Exception, psycopg2.DatabaseError) as error:
-                logger.error(f'DATABASE QUERY FAILED: {create_queries["create_tables"]} \n error: {error}')
-                print(error)
-        else:
-            try:
-                cur.execute(create_queries["create_db"])
-                print(create_queries["create_db"])
-                logger.info(f'DATABASE QUERY SUCCESSFUL: {create_queries["create_db"]}')
-            except (Exception, psycopg2.DatabaseError) as error:
-                logger.error(f'DATABASE QUERY FAILED: {create_queries["create_db"]} \n error: {error}')
-                print(error)
-            conn.close()
+        try:
+            cur.execute(create_queries["create_tables"])
+        except (Exception, psycopg2.DatabaseError) as error:
+            logger.error(f'DATABASE QUERY FAILED: {create_queries["create_tables"]} \n error: {error}')
+            print(error)
+        conn.close()
+    except(Exception, psycopg2.DatabaseError) as error:
+        print(error)
+        logger.error(f'DATABASE CONNECTION FAILED : {error}')
+def create_db():
+    try:
+        conn = psycopg2.connect(
+            host='localhost',
+            database="",
+            user='postgres',
+            password='postgres',
+            port='5432',
+        )
+        conn.autocommit = True
+        cur = conn.cursor()
+        try:
+            cur.execute(create_queries["create_db"])
+            print(create_queries["create_db"])
+            logger.info(f'DATABASE QUERY SUCCESSFUL: {create_queries["create_db"]}')
+        except (Exception, psycopg2.DatabaseError) as error:
+            logger.error(f'DATABASE QUERY FAILED: {create_queries["create_db"]} \n error: {error}')
+            print(error)
+        conn.close()
 
     except(Exception, psycopg2.DatabaseError) as error:
         print(error)
