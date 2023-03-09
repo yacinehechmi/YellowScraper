@@ -130,11 +130,16 @@ def main():
     create_db_and_tables(db)   # connect to postgresql server create tables
     index = 0
     while index < len(cities):
+        print(cities)
         for j in range(number_of_pages):
-            soup = fetch_page(j, list(cities[index].keys())[0])
+            page = fetch_page(j, list(cities[index].keys())[0])
+            page_content = page.content
+            soup = BeautifulSoup(page_content, 'html.parser')
+            if j == 1:
+                # find nearby cities and append them to cities list
+                find_nearby_cities(soup.find('section', {"class": "nearby-cities"}), cities)
+            scrape_clean_store(soup, db)
             # fetch_page HTTP GET request to www.yellowpage.com/{ city }/restaurants/?{ i }
-            # find nearby cities and append them to cities list
-            find_nearby_cities(soup.find('section', {"class": "nearby-cities"}), cities)
         index += 1
 
 
