@@ -4,19 +4,19 @@ The scraper fetches data based on a list of city(s) and the number of page(s) re
 ## Prerequisites
 - Python 3.x
 - Conda
-- postgresql server
+- Postgresql server
 
-## to run this project
+## To run this project
 1) Clone the repo `git clone https://github.com/yacine717/YellowScraper`
 2) Create conda environment `conda env create --name my_project --file environment.yml`
 3) Activate conda environment `conda activate my_project` 
 4) Run to create database and database tables `python3 init_sql.py`
 5) Run the script `python3 scraper.py`
 
-## database diagram
-the data is stored in a normalized for to avoid data redundancy in the following tables:
+## Database diagram
+The data is stored in a normalized for to avoid data redundancy in the following tables:
 - Business_info:
-  - business_id, Bigserial, PrimaryKey
+  - Business_id, Bigserial, PrimaryKey
   - Name, Varchar
   - Phone, Varchar
   - Price_range, Int
@@ -26,7 +26,7 @@ the data is stored in a normalized for to avoid data redundancy in the following
   - City_code, Varchar
   - City_name, Varchar
   - Zip_code, Varchar
-  - last_update, datetime
+  - Last_update, datetime
 - Foursquare_info:
   - Business_id, bigint, ForiegnKey
   - Rating, Float
@@ -46,8 +46,8 @@ the data is stored in a normalized for to avoid data redundancy in the following
   
 ![Database Diagram](assets/database_model.png)
 ## Notes
-- the csv processing part of this project is still in progress 
-- if you encounter any issues while running the project, please create a new issue in the repository.
+- The csv processing part of this project is still in progress 
+- If you encounter any issues while running the project, please create a new issue in the repository.
 
 ## Acknowledgments
 Special thanks to my fellow engineers at the dataGarage discord community who helped in the making of this project.
