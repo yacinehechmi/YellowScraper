@@ -1,10 +1,12 @@
 import logging
+# project modules
 from parameters import config
 from sql import create_db, create_tables
 
 def main():
     create_db()
     create_tables(config['db'])
+
 
 if __name__ == '__main__':
     logger = logging
