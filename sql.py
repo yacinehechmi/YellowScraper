@@ -1,22 +1,41 @@
 import psycopg2
-from dotenv import load_dotenv
-import os
 import logging
+import pandas as pd
 # project modules
-from parameters import create_queries, upsert_into_tables
+from Settings import settings, queries
 
 logger = logging.getLogger(__name__)
-load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
+
+
+def select_join(db):
+    try:
+        conn = psycopg2.connect(
+            host=settings['db_creds']['host'],
+            database=db,
+            user=settings['db_creds']['user'],
+            password=settings['db_creds']['pass'],
+            port=settings['db_creds']['port'],
+        )
+        try:
+            df = pd.read_sql(conn, queries['select'])
+            print(df.info())
+        except (Exception, psycopg2.DatabaseError) as error:
+            logger.error(f'DATABASE QUERY FAILED: {queries["upsert_into_tables"][0]} \n error: {error}')
+            print(error)
+        conn.close()
+    except(Exception, psycopg2.DatabaseError) as error:
+        print(error)
+        logger.error(f'DATABASE CONNECTION FAILED: {error}')
 
 
 def do_upsert(db, records=None):
     try:
         conn = psycopg2.connect(
-            host=os.getenv('HOST'),
+            host=settings['db_creds']['host'],
             database=db,
-            user=os.getenv('USER'),
-            password=os.getenv('PASSWORD'),
-            port=os.getenv('HOST'),
+            user=settings['db_creds']['user'],
+            password=settings['db_creds']['pass'],
+            port=settings['db_creds']['port'],
         )
         conn.autocommit = True
         logger.info('DATABASE CONNECTION SUCCESSFUL')
@@ -24,12 +43,12 @@ def do_upsert(db, records=None):
         #  run first query to insert business_info data and get back the id of a record
         #  and use that id to proceed inserting to the other related tables
         try:
-            cur.execute(upsert_into_tables[0], records[0])
+            cur.execute(queries["upsert_into_tables"][0], records[0])
             business_id = cur.fetchone()[0]
             #  append the business_id to the rest of queries data
             records = [item+(business_id,) for item in records[1:]]
             records_index = 0
-            for statement in upsert_into_tables[1:]:
+            for statement in queries["upsert_into_tables"][1:]:
                 #  loop through the rest of statements and execute them
                 try:
                     cur.execute(statement, records[records_index])
@@ -38,7 +57,7 @@ def do_upsert(db, records=None):
                     logger.error(f'DATABASE QUERY FAILED: {statement} \n error: {error}')
                     print(error)
         except (Exception, psycopg2.DatabaseError) as error:
-            logger.error(f'DATABASE QUERY FAILED: {upsert_into_tables[0]} \n error: {error}')
+            logger.error(f'DATABASE QUERY FAILED: {queries["upsert_into_tables"][0]} \n error: {error}')
             print(error)
         conn.close()
     except(Exception, psycopg2.DatabaseError) as error:
@@ -46,47 +65,48 @@ def do_upsert(db, records=None):
         logger.error(f'DATABASE CONNECTION FAILED: {error}')
 
 
-# Create tables business_info, access_info, yellowpages_info, tripadvisor_info, foursquare_info
-def create_tables(db):
-    try:
-        conn = psycopg2.connect(
-            host=os.getenv('HOST'),
-            database=db,
-            user=os.getenv('USER'),
-            password=os.getenv('PASSWORD'),
-            port=os.getenv('HOST'),
-        )
-        conn.autocommit = True
-        cur = conn.cursor()
-        try:
-            cur.execute(create_queries["create_tables"])
-        except (Exception, psycopg2.DatabaseError) as error:
-            logger.error(f'DATABASE QUERY FAILED: {create_queries["create_tables"]} \n error: {error}')
-        conn.close()
-    except(Exception, psycopg2.DatabaseError) as error:
-        print(error)
-        logger.error(f'DATABASE CONNECTION FAILED : {error}')
-
-
 # Create database in postgresql server
 def create_db():
     try:
         conn = psycopg2.connect(
-            host=os.getenv('HOST'),
-            database=os.getenv('DB'),
-            user=os.getenv('USER'),
-            password=os.getenv('PASSWORD'),
-            port=os.getenv('HOST'),
+            host=settings['db_creds']['host'],
+            database="",
+            user=settings['db_creds']['user'],
+            password=settings['db_creds']['pass'],
+            port=settings['db_creds']['port'],
         )
         conn.autocommit = True
         cur = conn.cursor()
         try:
-            cur.execute(create_queries["create_db"])
+            cur.execute(queries["create_db_and_tables"][0])
         except (Exception, psycopg2.DatabaseError) as error:
-            logger.error(f'DATABASE QUERY FAILED: {create_queries["create_db"]} \n error: {error}')
+            logger.error(f'DATABASE QUERY FAILED: {queries["create_db_and_tables"][0]} \n error: {error}')
             print(error)
         conn.close()
 
     except(Exception, psycopg2.DatabaseError) as error:
         print(error)
         logger.error(f'DATABASE CONNECTION FAILED : {error}')
+
+
+# Create tables business_info, access_info, yellowpages_info, tripadvisor_info, foursquare_info
+def create_tables(db):
+    try:
+        conn = psycopg2.connect(
+            host=settings['db_creds']['host'],
+            database=db,
+            user=settings['db_creds']['user'],
+            password=settings['db_creds']['pass'],
+            port=settings['db_creds']['port'],
+        )
+        conn.autocommit = True
+        cur = conn.cursor()
+        try:
+            cur.execute(queries["create_db_and_tables"][1])
+        except (Exception, psycopg2.DatabaseError) as error:
+            logger.error(f'DATABASE QUERY FAILED: {queries["create_db_and_tables"][1]} \n error: {error}')
+        conn.close()
+    except(Exception, psycopg2.DatabaseError) as error:
+        print(error)
+        logger.error(f'DATABASE CONNECTION FAILED : {error}')
+
