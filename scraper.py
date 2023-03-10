@@ -12,6 +12,7 @@ from sql import do_upsert
 from process_to_csv import write_to_csv, clean_csv
 from parameters import config
 
+
 db = config['db']
 cities = config['cities']
 number_of_pages = config['number_of_pages']
@@ -19,15 +20,10 @@ csv_file_name = config['csv_file_name']
 
 
 def scrape_clean_store(soup, db):
-    # get all elements with tag: div and class: info
-    # card = soup.find_all('div', _class="v-card")
-
-    # print(soup.find_all('div', {"class": "info"}))
+    # get all elements with tag: div and class: info of a single page
     card = soup.find_all('div', {"class": "info"})
-
-    # loop through all info div's of a single page found by the soup
     for i, j in enumerate(card):
-        # extantiate class business and assign soup content to class attributes
+        # call instance of class business and assign soup content to instance attributes
         business = Business(
             j.find('a', {'class': 'business-name'}),  # name
             j.find('div', {'class': 'phone'}),  # phone
@@ -84,15 +80,15 @@ def scrape_clean_store(soup, db):
             tripadvisor_info,
             foursquare_info
         ]
+
         # connect to { db } & upsert { records } into tables business_info,
         # access_info, yellowpages_info, tripadvisor_info, foursquare_info
-
         do_upsert(db, records)
-        # print(f'{i} time consumed : {time.time() - start}'
 
 
 def fetch_page(num_of_page, city):
     try:
+        # randomize header's user_agent
         ua = UserAgent()
         user_agent = ua.random
         headers = {
@@ -116,18 +112,21 @@ def main():
     run_one_time = False
     while index < len(cities):
         for j in range(1, number_of_pages):
+            # request yellowpages.com
             page = fetch_page(j, list(cities[index].keys())[0])
             page_content = page.content
             soup = BeautifulSoup(page_content, 'html.parser')
+            # when find_nearby_cities finds new cities it will never run again unless the scraped city is changed
             if not run_one_time:
+                # find nearby cities and append them to cities list if they don't exist
                 if find_nearby_cities(soup.find('section', {"class": "nearby-cities"}), cities):
                     run_one_time = True
-                # find nearby cities and append them to cities list
 
             scrape_clean_store(soup, db)
             # fetch_page HTTP GET request to www.yellowpage.com/{ city }/restaurants/?{ i }
         index += 1
     logger.info([city.values() for city in cities])
+
 
 if __name__ == "__main__":
     logger = logging
