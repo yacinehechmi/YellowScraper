@@ -3,10 +3,7 @@ import os
 import datetime as dt
 
 
-
 # work in progress for this script please note that it's not used in the main script
-
-
 # fixing to same length the categories and amenities lists
 def lists_to_same_length(data_dict):
     if len(data_dict['categories']) > len(data_dict['amenities']):
