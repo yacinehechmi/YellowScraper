@@ -1,11 +1,11 @@
 import logging
 # project modules
-from parameters import config
+from Settings import settings
 from sql import create_db, create_tables
 
 def main():
     create_db()
-    create_tables(config['db'])
+    create_tables(settings['db_creds']['db'])
 
 
 if __name__ == '__main__':
