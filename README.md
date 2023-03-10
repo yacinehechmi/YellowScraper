@@ -14,7 +14,7 @@ The scraper fetches data based on a list of city(s) and the number of page(s) re
 4) Run to create database and database tables `python3 init_sql.py`
 5) Run the script `python3 scraper.py`
 
-## Database diagram
+## Database model
 The data then stored in a normalized form to avoid data redundancy in the following tables:
 - Business_info:
   - Business_id, Bigserial, PrimaryKey
@@ -47,9 +47,12 @@ The data then stored in a normalized form to avoid data redundancy in the follow
 
 ![Database Diagram](assets/database_model.png)
 
-## Future Goals
+## TODO
   - add sample csv data
   - add visualizations
+  - use SQLalchemy
+
+## Future Goals
   - planning to create a second version of this project on airflow
   - automate airflow and postgres deployment using Ansible
 
