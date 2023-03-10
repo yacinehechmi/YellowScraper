@@ -1,7 +1,5 @@
 import requests
 import logging
-import time
-from dotenv import load_dotenv
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 
@@ -10,13 +8,13 @@ from classBusiness import Business
 from helpers import find_nearby_cities
 from sql import do_upsert
 from process_to_csv import write_to_csv, clean_csv
-from parameters import config
+from Settings import settings
 
 
-db = config['db']
-cities = config['cities']
-number_of_pages = config['number_of_pages']
-csv_file_name = config['csv_file_name']
+db = settings['db_creds']['db']
+cities = settings['cities']
+number_of_pages = settings['number_of_pages']
+csv_file_name = settings['csv_file_name']
 
 
 def scrape_clean_store(soup, db):
