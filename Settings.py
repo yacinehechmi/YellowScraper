@@ -1,14 +1,25 @@
-config = {
-    "db": "yellowpages",
+from dotenv import load_dotenv
+import os
+
+load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
+
+settings = {
     "csv_file_name": 'busi.csv',
     "number_of_pages": 2,
-    "cities": [{'/los-angeles-ca/retaurants': False}]
+    "cities": [{'/los-angeles-ca/retaurants': False}],
+    "db_creds": {
+        "host": os.getenv('HOST'),
+        "port": os.getenv('PORT'),
+        "pass": os.getenv('PASSWORD'),
+        "user": os.getenv('username'),
+        "db": os.getenv('DB'),
+    },
 }
-create_queries = {
-    "create_db": f"""CREATE DATABASE {config['db']};""",
 
-    "create_tables": """
-                        CREATE TABLE IF NOT EXISTS business_info (
+queries = {
+    "create_db_and_tables": (
+             f"""CREATE DATABASE {settings['db_creds']['db']};""",
+             """CREATE TABLE IF NOT EXISTS business_info (
                         business_id BIGSERIAL PRIMARY KEY NOT NULL,
                         name VARCHAR(50),
                         phone VARCHAR(20), 
@@ -49,12 +60,10 @@ create_queries = {
                         updated_at TIMESTAMP,
                         business_id BIGINT REFERENCES business_info(business_id),
                         CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
-                        );
-                        """
-}
-
-upsert_into_tables = (
-    """
+                        );"""
+    ),
+    "upsert_into_tables": (
+        """
         INSERT INTO business_info 
         (
         name, 
@@ -71,19 +80,19 @@ upsert_into_tables = (
         VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,NOW()) 
         ON CONFLICT (name) 
         DO UPDATE SET
-            phone=EXCLUDED.phone,
-            price_range=EXCLUDED.price_range ,
-            year_in_business=EXCLUDED.year_in_business,
-            amenities=EXCLUDED.amenities,
-            city_code=EXCLUDED.city_code,
-            city_name=EXCLUDED.city_name,
-            zip_code=EXCLUDED.zip_code,
-            categories=EXCLUDED.categories,
-            updated_at=EXCLUDED.updated_at
+        phone=EXCLUDED.phone,
+        price_range=EXCLUDED.price_range ,
+        year_in_business=EXCLUDED.year_in_business,
+        amenities=EXCLUDED.amenities,
+        city_code=EXCLUDED.city_code,
+        city_name=EXCLUDED.city_name,
+        zip_code=EXCLUDED.zip_code,
+        categories=EXCLUDED.categories,
+        updated_at=EXCLUDED.updated_at
         RETURNING business_id
         ;  
-    """,
-    """
+        """,
+        """
         INSERT INTO access_info 
         (           
         open_status ,
@@ -95,13 +104,13 @@ upsert_into_tables = (
         VALUES (%s,%s,%s,NOW(),%s) 
         ON CONFLICT (business_id) 
         DO UPDATE SET
-            open_status=EXCLUDED.open_status,
-            website=EXCLUDED.website,
-            order_online=EXCLUDED.order_online,
-            updated_at=EXCLUDED.updated_at 
+        open_status=EXCLUDED.open_status,
+        website=EXCLUDED.website,
+        order_online=EXCLUDED.order_online,
+        updated_at=EXCLUDED.updated_at 
         ;      
-    """,
-    """
+        """,
+        """
         INSERT INTO yellowpage_info 
         (
         rating ,
@@ -112,11 +121,11 @@ upsert_into_tables = (
         VALUES (%s,%s,NOW(),%s) 
         ON CONFLICT (business_id) 
         DO UPDATE SET
-            rating=EXCLUDED.rating,
-            rating_count=EXCLUDED.rating_count
+        rating=EXCLUDED.rating,
+        rating_count=EXCLUDED.rating_count
         ;
-    """,
-    """
+        """,
+        """
         INSERT INTO tripadvisor_info 
         (
         rating ,
@@ -127,12 +136,12 @@ upsert_into_tables = (
         VALUES (%s,%s,NOW(),%s) 
         ON CONFLICT (business_id) 
         DO UPDATE SET
-            rating=EXCLUDED.rating,
-            rating_count=EXCLUDED.rating_count,
-            updated_at=EXCLUDED.updated_at
+        rating=EXCLUDED.rating,
+        rating_count=EXCLUDED.rating_count,
+        updated_at=EXCLUDED.updated_at
         ;
-    """,
-    """
+        """,
+        """
         INSERT INTO foursquare_info 
         (
         rating ,
@@ -142,8 +151,18 @@ upsert_into_tables = (
         VALUES (%s,NOW(),%s) 
         ON CONFLICT (business_id) 
         DO UPDATE SET
-            rating=EXCLUDED.rating ,
-            updated_at=EXCLUDED.updated_at
+        rating=EXCLUDED.rating ,
+        updated_at=EXCLUDED.updated_at
         ;        
-    """
-)
+        """
+    ),
+    "select":
+        """
+        SELECT * FROM business_info
+        JOIN access_info ON business_info.business_id = access_info.business_id
+        JOIN yellowpage_info ON business_info.business_id = yellowpage_info.business_id
+        JOIN tripadvisor_info ON business_info.business_id = tripadvisor_info.business_id
+        JOIN foursquare_info ON business_info.business_id = foursquare_info.business_id
+        ;
+        """
+}
