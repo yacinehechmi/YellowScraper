@@ -7,7 +7,6 @@ from fake_useragent import UserAgent
 from classBusiness import Business
 from helpers import find_nearby_cities
 from sql import do_upsert
-from process_to_csv import write_to_csv, clean_csv
 from Settings import settings
 
 
