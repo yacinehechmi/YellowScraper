@@ -48,6 +48,8 @@ The data then stored in a normalized form to avoid data redundancy in the follow
 ![Database Diagram](assets/database_model.png)
 
 ## TODO
+  - data QA
+  - find ways to watch for differences in data rating,rating_count diff
   - add visualizations
   - use SQLalchemy
 
