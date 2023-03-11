@@ -10,8 +10,8 @@ settings = {
     "db_creds": {
         "host": os.getenv('HOST'),
         "port": os.getenv('PORT'),
-        "pass": os.getenv('PASSWORD'),
-        "user": os.getenv('username'),
+        "pass": os.getenv('PG_PASS'),
+        "user": os.getenv('PG_USER'),
         "db": os.getenv('DB'),
     },
 }
