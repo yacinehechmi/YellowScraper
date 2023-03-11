@@ -158,7 +158,26 @@ queries = {
     ),
     "select":
         """
-        SELECT * FROM business_info
+        SELECT 
+        business_info.name, 
+        business_info.phone, 
+        business_info.price_range,
+        business_info.year_in_business,
+        business_info.amenities,
+        business_info.categories,
+        business_info.city_name,
+        business_info.city_code,
+        business_info.zip_code,
+        business_info.updated_at,
+        access_info.open_status,
+        access_info.website,
+        access_info.order_online,
+        yellowpage_info.rating,
+        yellowpage_info.rating_count,
+        tripadvisor_info.rating,
+        tripadvisor_info.rating_count,
+        foursquare_info.rating        
+        FROM business_info
         JOIN access_info ON business_info.business_id = access_info.business_id
         JOIN yellowpage_info ON business_info.business_id = yellowpage_info.business_id
         JOIN tripadvisor_info ON business_info.business_id = tripadvisor_info.business_id
