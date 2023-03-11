@@ -48,7 +48,6 @@ The data then stored in a normalized form to avoid data redundancy in the follow
 ![Database Diagram](assets/database_model.png)
 
 ## TODO
-  - add sample csv data
   - add visualizations
   - use SQLalchemy
 
