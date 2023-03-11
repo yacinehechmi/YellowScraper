@@ -10,12 +10,6 @@ from sql.sql import do_upsert
 from Settings import settings
 
 
-db = settings['db_creds']['db']
-cities = settings['cities']
-number_of_pages = settings['number_of_pages']
-csv_file_name = settings['csv_file_name']
-
-
 def scrape_clean_store(soup, db):
     # get all elements with tag: div and class: info of a single page
     card = soup.find_all('div', {"class": "info"})
@@ -105,6 +99,11 @@ def fetch_page(num_of_page, city):
 
 
 def main():
+    db = settings['db_creds']['db']
+    cities = settings['cities']
+    number_of_pages = settings['number_of_pages']
+    csv_file_name = settings['csv_file_name']
+
     index = 0
     run_one_time = False
     while index < len(cities):
@@ -118,7 +117,6 @@ def main():
                 # find nearby cities and append them to cities list if they don't exist
                 if find_nearby_cities(soup.find('section', {"class": "nearby-cities"}), cities):
                     run_one_time = True
-
             scrape_clean_store(soup, db)
             # fetch_page HTTP GET request to www.yellowpage.com/{ city }/restaurants/?{ i }
         index += 1
