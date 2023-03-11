@@ -4,9 +4,9 @@ from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 
 # project mudules
-from classBusiness import Business
-from helpers import find_nearby_cities
-from sql import do_upsert
+from otherScripts.classBusiness import Business
+from otherScripts.helpers import find_nearby_cities
+from sql.sql import do_upsert
 from Settings import settings
 
 
