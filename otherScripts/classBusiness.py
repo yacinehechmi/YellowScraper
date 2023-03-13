@@ -4,6 +4,8 @@ import json
 class Business:
 
     def __init__(self,
+                 page_num,
+                 item_num,
                  name,
                  phone,
                  locality,
@@ -19,6 +21,8 @@ class Business:
                  order_online,
                  year_in_business,
                  ):
+        self.page_num = page_num
+        self.item_num = item_num
         self.name = name
         self.phone = phone
         self.locality = locality
