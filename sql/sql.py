@@ -1,9 +1,11 @@
 import psycopg2
 import logging
 import pandas as pd
+
+
 # project modules
 from Settings import settings
-from Queries import queries
+from sql.Queries import queries
 
 logger = logging.getLogger(__name__)
 
