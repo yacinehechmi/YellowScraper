@@ -1,17 +1,7 @@
 import pandas as pd
+
 import os
 import datetime as dt
-
-
-def find_nearby_cities(nearby_cities, cities):
-    if nearby_cities is not None:
-        for nearby_city in nearby_cities:
-            for name in nearby_city.find_all('a', {'href': True}):
-                if name['href'] not in [item for subdict in cities for item in subdict]:
-                    cities.append({name['href']: False})
-        return True
-    else:
-        return False
 
 # work in progress for this script please note that it's not used in the main script
 # fixing to same length the categories and amenities lists
