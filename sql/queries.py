@@ -1,4 +1,4 @@
-from Settings import settings
+from settings import settings
 queries = {
     "create_db_and_tables": (
              f"""CREATE DATABASE {settings['db_creds']['db']};""",
