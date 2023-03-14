@@ -54,11 +54,12 @@ The data then stored in a normalized form to avoid data redundancy in the follow
   - use SQLalchemy
 
 ## Future Goals
-  - planning to create a second version of this project on airflow
-  - automate airflow and postgres deployment using Ansible
+  - planning to create a second version of this project on airflow.
+  - automate airflow and postgres deployment using Ansible.
 
 ## Notes
-- The csv processing part of this project is still in progress 
+- Sorry the project is not working at this moment i'm currently making some changes, it will be fixed as soon as possible. 
+- The csv processing part of this project is still in progress.
 - If you encounter any issues while running the project, please create a new issue in the repository.
 
 ## Acknowledgments
