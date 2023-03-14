@@ -1,11 +1,10 @@
 import psycopg2
-import logging
 import pandas as pd
 
+import logging
 
-# project modules
-from Settings import settings
-from sql.Queries import queries
+from settings import settings
+from sql.queries import queries
 
 logger = logging.getLogger(__name__)
 
@@ -112,4 +111,3 @@ def create_tables(db):
     except(Exception, psycopg2.DatabaseError) as error:
         print(error)
         logger.error(f'DATABASE CONNECTION FAILED : {error}')
-
