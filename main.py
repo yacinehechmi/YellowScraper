@@ -1,20 +1,19 @@
-import requests
-import logging
 from bs4 import BeautifulSoup
-from fake_useragent import UserAgent
 
-# project mudules
-from otherScripts.classBusiness import Business
-from otherScripts.helpers import find_nearby_cities
+import logging
+
+from utils.item import Business
+from utils.scraper import find_nearby_cities, find_pagination
+from utils.fetch import fetch_page
 from sql.sql import do_upsert
-from Settings import settings
+from settings import settings
 
 
 def scrape_clean_store(soup, db, page_num):
     # get all elements with tag: div and class: info of a single page
     card = soup.find_all('div', {"class": "info"})
     for i, j in enumerate(card):
-        # call instance of class business and assign soup content to instance attributes
+        # call instance of class business and assign soup content to instance variables
         business = Business(
             page_num,
             i,
@@ -77,36 +76,14 @@ def scrape_clean_store(soup, db, page_num):
         # connect to { db } & upsert { records } into tables business_info,
         # access_info, yellowpages_info, tripadvisor_info, foursquare_info
         do_upsert(db, records)
-        print(business.page_num, business.item_num)
-
-def fetch_page(num_of_page, city):
-    print(num_of_page, city)
-    try:
-        # randomize header's user_agent
-        ua = UserAgent()
-        user_agent = ua.random
-        headers = {
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,"
-                      "image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
-            "Accept-Encoding": "gzip, deflate, br",
-            "Accept-Language": "en-US,en;q=0.9",
-            "Connection": "keep-alive",
-            "User-Agent": user_agent,
-            "Cache-Control": "max-age=0, no-cache, no-store",
-            "Upgrade-Insecure-Requests": "1"
-        }
-        print('got it')
-        return requests.get(f"https://www.yellowpages.com{city}", headers=headers, params={
-                "page": num_of_page})
-    except requests.HTTPError as errHTTP:
-        logger.error(f" GOT {errHTTP} AT: num_of_page:{num_of_page} city:{city}")
+        print(business.page_number, business.item_number)
 
 
 def main():
     db = settings['db_creds']['db']
     cities = settings['cities']
     number_of_pages = settings['number_of_pages']
-    csv_file_name = settings['csv_file_name']
+    # csv_file_name = settings['csv_file_name']
     index = 0
     run_one_time = False
     while index < len(cities):
@@ -115,6 +92,7 @@ def main():
             page = fetch_page(j, list(cities[index].keys())[0])
             page_content = page.content
             soup = BeautifulSoup(page_content, 'html.parser')
+            find_pagination(soup.find('div', {'class': 'pagination'}))
             # when find_nearby_cities finds new cities it will never run again unless the scraped city is changed
             if not run_one_time:
                 # find nearby cities and append them to cities list if they don't exist
@@ -128,5 +106,6 @@ def main():
 
 if __name__ == "__main__":
     logger = logging
-    logger.basicConfig(level=logging.INFO, filename='logs/scraper.log', format='[%(asctime)s] %(levelname)s:%(message)s')
+    logger.basicConfig(level=logging.INFO, filename='logs/scraper.log',
+                       format='[%(asctime)s] %(levelname)s:%(message)s')
     main()
