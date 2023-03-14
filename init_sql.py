@@ -1,7 +1,8 @@
 import logging
-# project modules
-from Settings import settings
+
+from settings import settings
 from sql.sql import create_db, create_tables
+
 
 def main():
     create_db()
