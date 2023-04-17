@@ -10,7 +10,7 @@ The scraper fetches data based on a list of city(s) and the number of page(s) re
 
 ## To run this project
 1) Clone the repo `git clone https://github.com/yacine717/YellowScraper`
-2) Create conda environment `conda env create --name my_project --file environment.yml`
+2) Create conda environment `conda env create --name my_project --file requirements.yml`
 3) Activate conda environment `conda activate my_project` 
 4) Run to create database and database tables `python3 init_sql.py`
 5) Run the script `python3 scraper.py`
