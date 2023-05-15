@@ -4,13 +4,13 @@ queries = {
              f"""CREATE DATABASE {settings['db_creds']['db']};""",
              """CREATE TABLE IF NOT EXISTS business_info (
                         business_id BIGSERIAL PRIMARY KEY NOT NULL,
-                        name VARCHAR(50),
+                        name VARCHAR(100),
                         phone VARCHAR(20), 
                         price_range INTEGER,
                         year_in_business INTEGER,
                         amenities text[],
                         categories text[],
-                        city_name VARCHAR(50),
+                        city_name VARCHAR(100),
                         city_code VARCHAR(30),
                         zip_code INTEGER,
                         updated_at TIMESTAMP,
@@ -18,7 +18,7 @@ queries = {
                         );
                         CREATE TABLE IF NOT EXISTS access_info (
                         open_status VARCHAR(30),
-                        website VARCHAR(200),
+                        website VARCHAR(500),
                         order_online VARCHAR(30),
                         updated_at TIMESTAMP,
                         business_id BIGINT REFERENCES business_info(business_id),                                                     
