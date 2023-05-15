@@ -1,5 +1,4 @@
 # YellowScraper-v1
-- Sorry the project is not working at the moment i'm currently making some changes, it will be fixed as soon as possible.
 - This project is part of my studies of Data Engineering, This is a python scraper that retrieves restaurant listings data from yellowpages.com and stores it in a postgres database
 The scraper fetches data based on a list of city(s) and the number of page(s) requested for each city, it can also discover nearby cities by scraping the nearby cities section.
 
@@ -49,18 +48,13 @@ The data then stored in a normalized form to avoid data redundancy in the follow
 ![Database Diagram](assets/database_model.png)
 
 ## TODO
-  - data QA
-  - find ways to watch for differences in data rating,rating_count diff
   - add visualizations
   - use SQLalchemy
 
 ## Future Goals
   - planning to create a second version of this project on airflow.
-  - automate airflow and postgres deployment using Ansible.
 
 ## Notes
-- Sorry the project is not working at the moment i'm currently making some changes, it will be fixed as soon as possible. 
-- The csv processing part of this project is still in progress.
 - If you encounter any issues while running the project, please create a new issue in the repository.
 
 ## Acknowledgments
