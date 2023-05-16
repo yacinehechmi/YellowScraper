@@ -1,6 +1,6 @@
+
 import psycopg2
 import pandas as pd
-
 import logging
 
 from settings import settings
