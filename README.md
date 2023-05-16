@@ -50,7 +50,6 @@ The data then stored in a normalized form to avoid data redundancy in the follow
 ## TODO
   - pagination still hard-coded, should find a way to calculate that and put it through the dict of cities
   - add visualizations
-  - use SQLalchemy
 
 ## Future Goals
   - planning to create a second version of this project on airflow.
