@@ -1,4 +1,6 @@
 from bs4 import BeautifulSoup as bs
+
+
 def find_pagination(pagination):
     if pagination is not None:
         print(pagination.find('span'))
