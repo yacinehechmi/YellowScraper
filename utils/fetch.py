@@ -4,16 +4,19 @@ from fake_useragent import UserAgent
 
 
 async def fetch_page(session, url):
-    async with session.get(url) as res:
-        return await res.text()
+    try:
+        async with session.get(url) as res:
+            return await res.text()
+    except aiohttp.ClientConnectorError as e:
+        print('connection failed', str(e))
 
 
-async def fetch_all(session, cities):
+async def fetch_all(session, cities, pagination):
     tasks = []
     # put the loops here, when looping through cities and num of pages
     print(type(cities))
     for city in cities:
-        for page in range(30):
+        for page in range(pagination):
             if page > 1:
                 url = f'https://www.yellowpages.com{city}/?page={page}'
             else:
@@ -24,7 +27,7 @@ async def fetch_all(session, cities):
     return results
 
 
-async def fetch(cities):
+async def fetch(cities, pagination):
     ua = UserAgent()
     user_agent = ua.random
     headers = {
@@ -38,5 +41,5 @@ async def fetch(cities):
                 "Upgrade-Insecure-Requests": "1"
                 }
     async with aiohttp.ClientSession(headers = headers) as session:
-        data = await fetch_all(session, cities)
+        data = await fetch_all(session, cities, pagination)
         return data
