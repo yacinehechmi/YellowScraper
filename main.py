@@ -69,26 +69,24 @@ def parse_and_store(results, db):
             ]
             do_upsert(db, records)
 
-cities = [
-        '/beverly-hills-ca/retaurants',
-        ]
 
-db = settings['db_creds']['db']
-
-def main(cities):
+def main(cities, db, pagination):
     results = None
     while True:
         if results:
             cities = build_cities_list(results, cities)
-            results = asyncio.run(fetch(cities))
+            results = asyncio.run(fetch(cities, pagination))
             parse_and_store(results, db)
         else: 
-            results = asyncio.run(fetch(cities))
+            results = asyncio.run(fetch(cities, pagination))
             parse_and_store(results, db)
 
 
 if __name__ == "__main__":
+    pagination = settings['pagination'] 
+    cities = settings['cities']
+    db = settings['db_creds']['db']
     logger = logging
     logger.basicConfig(level=logging.INFO, filename='logs/scraper.log',
                        format='[%(asctime)s] %(levelname)s:%(message)s')
-    main(cities)
+    main(cities, db, pagination)
