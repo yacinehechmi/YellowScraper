@@ -48,6 +48,7 @@ The data then stored in a normalized form to avoid data redundancy in the follow
 ![Database Diagram](assets/database_model.png)
 
 ## TODO
+  - pagination still hard-coded, should find a way to calculate that and put it through the dict of cities
   - add visualizations
   - use SQLalchemy
 
