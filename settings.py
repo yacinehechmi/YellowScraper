@@ -6,7 +6,7 @@ load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 settings = {
     'csv_file_name': 'business.csv',
     'pagination': 3,
-    'cities': ['/los-angeles-ca/retaurants'],
+    'cities': {'/los-angeles-ca/retaurants': False},
     'db_creds': {
         'host': os.getenv('HOST'),
         'port': os.getenv('PORT'),
