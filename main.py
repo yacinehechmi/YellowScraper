@@ -9,28 +9,27 @@ from settings import settings
 
 
 def parse_and_store(results, db):
-    # get all elements with tag: div and class: info of a single page
     for page in results:
         soup = bs(page)
-        card = soup.find_all('div', {"class": "info"})
-        for i, j in enumerate(card):
-            # call instance of class business and assign soup content to instance variables
+        info_list = soup.find_all('div', {"class": "info"})
+        for item_index, item in enumerate(info_list):
+            # call instance of class business and assign soup content to instance attributes
             business = Business(
-                    i,
-                    j.find('a', {'class': 'business-name'}),  # name
-                    j.find('div', {'class': 'phone'}),  # phone
-                    j.find('div', {'class': 'locality'}),  # locality
-                    j.find('div', {'class': 'price-range'}),  # price_range
-                    j.find('div', {'class': 'open-status'}),  # open_status
-                    j.find('div', {'class': 'result-rating'}),  # rating
-                    j.find('div', {'class': 'count'}),  # rating_count
-                    j.find('div', {'class': 'ratings'}),  # tripadvisor
-                    j.find('div', {'class': 'ratings'}),  # foursquare_rating
-                    j.find_all("div", {"class": "categories"}),  # categories
-                    j.find_all("div", {"class": "amenities-info"}),  # amenities
-                    j.find('a', {'class': 'track-visit-website', 'href': True}),  # website
-                    j.find('a', {'class': 'order-online', 'href': True}),  # order_online
-                    j.find('div', {'class': 'number'}),  # year_in_business
+                    item_index,
+                    item.find('a', {'class': 'business-name'}),  # name
+                    item.find('div', {'class': 'phone'}),  # phone
+                    item.find('div', {'class': 'locality'}),  # locality
+                    item.find('div', {'class': 'price-range'}),  # price_range
+                    item.find('div', {'class': 'open-status'}),  # open_status
+                    item.find('div', {'class': 'result-rating'}),  # rating
+                    item.find('div', {'class': 'count'}),  # rating_count
+                    item.find('div', {'class': 'ratings'}),  # tripadvisor
+                    item.find('div', {'class': 'ratings'}),  # foursquare_rating
+                    item.find_all("div", {"class": "categories"}),  # categories
+                    item.find_all("div", {"class": "amenities-info"}),  # amenities
+                    item.find('a', {'class': 'track-visit-website', 'href': True}),  # website
+                    item.find('a', {'class': 'order-online', 'href': True}),  # order_online
+                    item.find('div', {'class': 'number'}),  # year_in_business
                     )
             business_info = (
                     business.get_name(),
@@ -59,7 +58,6 @@ def parse_and_store(results, db):
             foursquare_info = (
                     business.get_foursquare_rating(),
                     )
-    
             records = [
                 business_info,
                 access_info,
@@ -75,11 +73,15 @@ def main(cities, db, pagination):
     while True:
         if results:
             cities = build_cities_list(results, cities)
-            results = asyncio.run(fetch(cities, pagination))
-            parse_and_store(results, db)
+            if cities: 
+                results = asyncio.run(fetch(cities, pagination))
+                if results:
+                    parse_and_store(results, db)
         else: 
             results = asyncio.run(fetch(cities, pagination))
-            parse_and_store(results, db)
+            if results:
+                parse_and_store(results, db)
+
 
 
 if __name__ == "__main__":
