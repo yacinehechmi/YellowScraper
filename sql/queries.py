@@ -25,21 +25,21 @@ queries = {
                         CONSTRAINT access_unique_id_fk UNIQUE (business_id)
                         );
                         CREATE TABLE IF NOT EXISTS yellowpage_info (
-                        rating FLOAT,
-                        rating_count INTEGER,
+                        yellowpage_rating FLOAT,
+                        yellowpage_rating_count INTEGER,
                         updated_at TIMESTAMP,
                         business_id BIGINT REFERENCES business_info(business_id),
                         CONSTRAINT yellowpage_unique_id_fk UNIQUE (business_id)
                         );
                         CREATE TABLE IF NOT EXISTS tripadvisor_info (
-                        rating FLOAT,
-                        rating_count INTEGER,
+                        tripadvisor_rating FLOAT,
+                        tripadvisor_rating_count INTEGER,
                         updated_at TIMESTAMP,
                         business_id BIGINT REFERENCES business_info(business_id),
                         CONSTRAINT tripadvisor_unique_id_fk UNIQUE (business_id)
                         );
                         CREATE TABLE IF NOT EXISTS foursquare_info (
-                        rating FLOAT,
+                        foursquare_rating FLOAT,
                         updated_at TIMESTAMP,
                         business_id BIGINT REFERENCES business_info(business_id),
                         CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
@@ -96,45 +96,45 @@ queries = {
         """
         INSERT INTO yellowpage_info 
         (
-        rating ,
-        rating_count ,
+        yellowpage_rating ,
+        yellowpage_rating_count ,
         updated_at ,
         business_id 
         ) 
         VALUES (%s,%s,NOW(),%s) 
         ON CONFLICT (business_id) 
         DO UPDATE SET
-        rating=EXCLUDED.rating,
-        rating_count=EXCLUDED.rating_count
+        yellowpage_rating=EXCLUDED.yellowpage_rating,
+        yellowpage_rating_count=EXCLUDED.yellowpage_rating_count
         ;
         """,
         """
         INSERT INTO tripadvisor_info 
         (
-        rating ,
-        rating_count ,
+        tripadvisor_rating ,
+        tripadvisor_rating_count ,
         updated_at ,
         business_id 
         ) 
         VALUES (%s,%s,NOW(),%s) 
         ON CONFLICT (business_id) 
         DO UPDATE SET
-        rating=EXCLUDED.rating,
-        rating_count=EXCLUDED.rating_count,
+        tripadvisor_rating=EXCLUDED.tripadvisor_rating,
+        tripadvisor_rating_count=EXCLUDED.tripadvisor_rating_count,
         updated_at=EXCLUDED.updated_at
         ;
         """,
         """
         INSERT INTO foursquare_info 
         (
-        rating ,
+        foursquare_rating ,
         updated_at , 
         business_id 
         ) 
         VALUES (%s,NOW(),%s) 
         ON CONFLICT (business_id) 
         DO UPDATE SET
-        rating=EXCLUDED.rating ,
+        foursquare_rating=EXCLUDED.foursquare_rating ,
         updated_at=EXCLUDED.updated_at
         ;        
         """
@@ -155,11 +155,11 @@ queries = {
         access_info.open_status,
         access_info.website,
         access_info.order_online,
-        yellowpage_info.rating,
-        yellowpage_info.rating_count,
-        tripadvisor_info.rating,
-        tripadvisor_info.rating_count,
-        foursquare_info.rating        
+        yellowpage_info.yellowpage_rating,
+        yellowpage_info.yellowpage_rating_count,
+        tripadvisor_info.tripadvisor_rating,
+        tripadvisor_info.tripadvisor_rating_count,
+        foursquare_info.foursquare_rating        
         FROM business_info
         JOIN access_info ON business_info.business_id = access_info.business_id
         JOIN yellowpage_info ON business_info.business_id = yellowpage_info.business_id
@@ -168,3 +168,7 @@ queries = {
         ;
         """
 }
+#    "viz_queries":
+#        """
+#
+#        """
