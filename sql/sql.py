@@ -20,7 +20,6 @@ def get_conn(db=None):
         )
         return conn
     except(Exception, psycopg2.DatabaseError) as error:
-        print(error)
         logger.error(f'DATABASE CONNECTION FAILED: {error}')
 
 
@@ -28,10 +27,8 @@ def select_join(db):
     conn = get_conn(db)
     try:
         df = pd.read_sql(conn, queries['select'])
-        print(df.info())
     except (Exception, psycopg2.DatabaseError) as error:
         logger.error(f'DATABASE QUERY FAILED: {queries["upsert_into_tables"][0]} \n error: {error}')
-        print(error)
     conn.close()
 
 
@@ -55,10 +52,8 @@ def do_upsert(db, records=None):
                 records_index += 1
             except (Exception, psycopg2.DatabaseError) as error:
                 logger.error(f'DATABASE QUERY FAILED: {statement} \n error: {error}')
-                print(error)
     except (Exception, psycopg2.DatabaseError) as error:
         logger.error(f'DATABASE QUERY FAILED: {queries["upsert_into_tables"][0]} \n error: {error}')
-        print(error)
     conn.close()
 
 
@@ -71,7 +66,6 @@ def create_db():
         cur.execute(queries["create_db_and_tables"][0])
     except (Exception, psycopg2.DatabaseError) as error:
         logger.error(f'DATABASE QUERY FAILED: {queries["create_db_and_tables"][0]} \n error: {error}')
-        print(error)
     conn.close()
 
 
