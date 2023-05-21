@@ -1,6 +1,3 @@
-from bs4 import BeautifulSoup as bs
-
-
 def find_pagination(pagination):
     if pagination is not None:
         pag_str = pagination.find('span')
@@ -13,19 +10,11 @@ def find_pagination(pagination):
 
 
 def find_nearby_cities(nearby_cities, cities):
+    new_cities = {}
     if nearby_cities is not None:
         for nearby_city in nearby_cities:
-            for name in nearby_city.find_all('a', {'href': True}):
-                if name['href'] not in [city for city in cities.keys()]:
-                    cities.update({name['href']: False})
-    else:
-        return None
-
-
-def build_cities_list(results, cities):
-    for page in results:
-        soup = bs(page)
-  #      print(find_pagination(soup.find('div', {'class': 'pagination'})))
-        find_nearby_cities(soup.find('section', {'class': 'nearby-cities'}), cities)
-    return cities
-        
+            for city in nearby_city.find_all('a', {'href': True}):
+                if city['href'] not in [city for city in cities.keys()]:
+                    new_cities.update({city['href']: False})
+                    cities.update({city['href']: False})
+    return new_cities
