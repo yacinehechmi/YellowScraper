@@ -5,7 +5,7 @@ queries = {
              """CREATE TABLE IF NOT EXISTS business_info (
                         business_id BIGSERIAL PRIMARY KEY NOT NULL,
                         name VARCHAR(100),
-                        phone VARCHAR(20), 
+                        phone VARCHAR(20),
                         price_range INTEGER,
                         year_in_business INTEGER,
                         amenities text[],
@@ -21,7 +21,7 @@ queries = {
                         website VARCHAR(500),
                         order_online VARCHAR(30),
                         updated_at TIMESTAMP,
-                        business_id BIGINT REFERENCES business_info(business_id),                                                     
+                        business_id BIGINT REFERENCES business_info(business_id),
                         CONSTRAINT access_unique_id_fk UNIQUE (business_id)
                         );
                         CREATE TABLE IF NOT EXISTS yellowpage_info (
@@ -47,21 +47,21 @@ queries = {
     ),
     "upsert_into_tables": (
         """
-        INSERT INTO business_info 
+        INSERT INTO business_info
         (
-        name, 
+        name,
         phone,
-        price_range, 
+        price_range,
         year_in_business,
         amenities,
         categories,
         city_name,
         city_code,
         zip_code,
-        updated_at 
+        updated_at
         )
-        VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,NOW()) 
-        ON CONFLICT (name) 
+        VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,NOW())
+        ON CONFLICT (name)
         DO UPDATE SET
         phone=EXCLUDED.phone,
         price_range=EXCLUDED.price_range ,
@@ -73,51 +73,51 @@ queries = {
         categories=EXCLUDED.categories,
         updated_at=EXCLUDED.updated_at
         RETURNING business_id
-        ;  
+        ;
         """,
         """
-        INSERT INTO access_info 
-        (           
-        open_status ,
+        INSERT INTO access_info
+        (
+        open_status,
         website,
-        order_online ,
-        updated_at ,
-        business_id           
+        order_online,
+        updated_at,
+        business_id
         )
-        VALUES (%s,%s,%s,NOW(),%s) 
-        ON CONFLICT (business_id) 
+        VALUES (%s,%s,%s,NOW(),%s)
+        ON CONFLICT (business_id)
         DO UPDATE SET
         open_status=EXCLUDED.open_status,
         website=EXCLUDED.website,
         order_online=EXCLUDED.order_online,
-        updated_at=EXCLUDED.updated_at 
-        ;      
+        updated_at=EXCLUDED.updated_at
+        ;
         """,
         """
-        INSERT INTO yellowpage_info 
+        INSERT INTO yellowpage_info
         (
-        yellowpage_rating ,
-        yellowpage_rating_count ,
-        updated_at ,
-        business_id 
-        ) 
-        VALUES (%s,%s,NOW(),%s) 
-        ON CONFLICT (business_id) 
+        yellowpage_rating,
+        yellowpage_rating_count,
+        updated_at,
+        business_id
+        )
+        VALUES (%s,%s,NOW(),%s)
+        ON CONFLICT (business_id)
         DO UPDATE SET
         yellowpage_rating=EXCLUDED.yellowpage_rating,
         yellowpage_rating_count=EXCLUDED.yellowpage_rating_count
         ;
         """,
         """
-        INSERT INTO tripadvisor_info 
+        INSERT INTO tripadvisor_info
         (
         tripadvisor_rating ,
-        tripadvisor_rating_count ,
+        tripadvisor_rating_count,
         updated_at ,
-        business_id 
-        ) 
-        VALUES (%s,%s,NOW(),%s) 
-        ON CONFLICT (business_id) 
+        business_id
+        )
+        VALUES (%s,%s,NOW(),%s)
+        ON CONFLICT (business_id)
         DO UPDATE SET
         tripadvisor_rating=EXCLUDED.tripadvisor_rating,
         tripadvisor_rating_count=EXCLUDED.tripadvisor_rating_count,
@@ -125,25 +125,25 @@ queries = {
         ;
         """,
         """
-        INSERT INTO foursquare_info 
+        INSERT INTO foursquare_info
         (
-        foursquare_rating ,
-        updated_at , 
-        business_id 
-        ) 
-        VALUES (%s,NOW(),%s) 
-        ON CONFLICT (business_id) 
+        foursquare_rating,
+        updated_at ,
+        business_id
+        )
+        VALUES (%s,NOW(),%s)
+        ON CONFLICT (business_id)
         DO UPDATE SET
         foursquare_rating=EXCLUDED.foursquare_rating ,
         updated_at=EXCLUDED.updated_at
-        ;        
+        ;
         """
     ),
     "select":
         """
-        SELECT 
-        business_info.name, 
-        business_info.phone, 
+        SELECT
+        business_info.name,
+        business_info.phone,
         business_info.price_range,
         business_info.year_in_business,
         business_info.amenities,
@@ -159,7 +159,7 @@ queries = {
         yellowpage_info.yellowpage_rating_count,
         tripadvisor_info.tripadvisor_rating,
         tripadvisor_info.tripadvisor_rating_count,
-        foursquare_info.foursquare_rating        
+        foursquare_info.foursquare_rating
         FROM business_info
         JOIN access_info ON business_info.business_id = access_info.business_id
         JOIN yellowpage_info ON business_info.business_id = yellowpage_info.business_id
