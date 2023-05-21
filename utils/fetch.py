@@ -3,8 +3,10 @@ import asyncio
 from fake_useragent import UserAgent
 
 
+# fetching per page
 async def fetch_page(session, url):
     try:
+        # for random UserAgent for each request
         ua = UserAgent()
         user_agent = ua.random
         headers = {
@@ -26,8 +28,11 @@ async def fetch_page(session, url):
 
 
 async def fetch_all(session, cities, pagination):
+    '''
+    loop through each page in each city and make an async request
+    then gather those request to be executed concurrently
+    '''
     tasks = []
-    # put the loops here, when looping through cities and num of pages
     for city, is_scraped in cities.items():
         if is_scraped:
             continue
@@ -40,11 +45,16 @@ async def fetch_all(session, cities, pagination):
                 task = asyncio.create_task(fetch_page(session, url))
                 tasks.append(task)
     res = None
+    '''
+    added this while loop to make sure we get the requests
+    pretty sure there is a better way to do this also
+    '''
     while not res:
         res = await asyncio.gather(*tasks)
     return res
 
 
 async def fetch(cities, pagination):
+    # getting the new cities dict to be fetched
     async with aiohttp.ClientSession() as session:
         return await fetch_all(session, cities, pagination)

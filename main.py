@@ -9,21 +9,32 @@ from settings import settings
 
 
 def parse_and_store(results, db, cities):
-    run_once = False
+    # pretty sure there is a better way to do this
+    run_once = False  # to run find_nearby_cities once in every url
     for page in results:
-        print('----')
-        soup = bs(page, features="lxml")
+        soup = bs(page, features="lxml")  # added lxml to silence bs4 warning
         if not run_once:
+            '''
+            the find_nearby_cities() will parse nearby cities
+            and pagination for each city and return them in a new dictionary
+            '''
             new_cities = find_nearby_cities(soup.
                                             find('section',
                                                  {'class': 'nearby-cities'}),
-                                            cities)
+                                            soup.
+                                            find('div',
+                                                 {'class': 'pagination'}),
+                                            cities
+                                            )
             if new_cities:
                 run_once = True
         info_list = soup.find_all('div', {"class": "info"})
         for item_index, item in enumerate(info_list):
-            # call instance of class business and assign soup content
-            # to instance attributes
+            '''
+            call instance of class business and assign soup content
+            to instance attributes
+            the class will be responsible for cleaning the parsed data
+            '''
             business = Business(
                     item_index,
                     item.find('a', {'class': 'business-name'}),  # name
@@ -55,7 +66,6 @@ def parse_and_store(results, db, cities):
                 business.get_foursquare_info()
             ]
             do_upsert(db, records)
-        print('here')
     return new_cities
 
 
@@ -66,12 +76,10 @@ def main(cities, db, pagination):
             new_cities = parse_and_store(results, db, cities)
             if new_cities:
                 results = asyncio.run(fetch(new_cities, pagination))
-                print(new_cities)
             else:
                 break
         else:
             results = asyncio.run(fetch(cities, pagination))
-    print("the end")
 
 
 if __name__ == "__main__":
