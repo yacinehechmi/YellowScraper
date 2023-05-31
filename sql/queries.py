@@ -1,8 +1,8 @@
 from settings import settings
 queries = {
-    "create_db_and_tables": (
-             f"""CREATE DATABASE {settings['db_creds']['db']};""",
-             """CREATE TABLE IF NOT EXISTS business_info (
+    "create_db": f"""CREATE DATABASE {settings['db_creds']['database']} TEMPLATE template0;""",
+
+    "create_tables": """CREATE TABLE IF NOT EXISTS business_info (
                         business_id BIGSERIAL PRIMARY KEY NOT NULL,
                         name VARCHAR(100),
                         phone VARCHAR(20),
@@ -16,6 +16,7 @@ queries = {
                         updated_at TIMESTAMP,
                         CONSTRAINT business_info_name_unique UNIQUE (name)
                         );
+
                         CREATE TABLE IF NOT EXISTS access_info (
                         open_status VARCHAR(30),
                         website VARCHAR(500),
@@ -24,6 +25,7 @@ queries = {
                         business_id BIGINT REFERENCES business_info(business_id),
                         CONSTRAINT access_unique_id_fk UNIQUE (business_id)
                         );
+
                         CREATE TABLE IF NOT EXISTS yellowpage_info (
                         yellowpage_rating FLOAT,
                         yellowpage_rating_count INTEGER,
@@ -31,6 +33,7 @@ queries = {
                         business_id BIGINT REFERENCES business_info(business_id),
                         CONSTRAINT yellowpage_unique_id_fk UNIQUE (business_id)
                         );
+
                         CREATE TABLE IF NOT EXISTS tripadvisor_info (
                         tripadvisor_rating FLOAT,
                         tripadvisor_rating_count INTEGER,
@@ -38,13 +41,14 @@ queries = {
                         business_id BIGINT REFERENCES business_info(business_id),
                         CONSTRAINT tripadvisor_unique_id_fk UNIQUE (business_id)
                         );
+
                         CREATE TABLE IF NOT EXISTS foursquare_info (
                         foursquare_rating FLOAT,
                         updated_at TIMESTAMP,
                         business_id BIGINT REFERENCES business_info(business_id),
                         CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
-                        );"""
-    ),
+                        );""",
+
     "upsert_into_tables": (
         """
         INSERT INTO business_info
@@ -75,6 +79,7 @@ queries = {
         RETURNING business_id
         ;
         """,
+
         """
         INSERT INTO access_info
         (
@@ -93,6 +98,7 @@ queries = {
         updated_at=EXCLUDED.updated_at
         ;
         """,
+
         """
         INSERT INTO yellowpage_info
         (
@@ -108,6 +114,7 @@ queries = {
         yellowpage_rating_count=EXCLUDED.yellowpage_rating_count
         ;
         """,
+
         """
         INSERT INTO tripadvisor_info
         (
@@ -124,6 +131,7 @@ queries = {
         updated_at=EXCLUDED.updated_at
         ;
         """,
+
         """
         INSERT INTO foursquare_info
         (
@@ -139,6 +147,7 @@ queries = {
         ;
         """
     ),
+
     "select":
         """
         SELECT
@@ -168,7 +177,3 @@ queries = {
         ;
         """
 }
-#    "viz_queries":
-#        """
-#
-#        """
