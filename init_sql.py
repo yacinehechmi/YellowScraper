@@ -1,12 +1,11 @@
 import logging
-
-from settings import settings
-from sql.sql import create_db, create_tables
+from utils.Sql import Queries
 
 
 def main():
-    create_db()
-    create_tables(settings['db_creds']['db'])
+    p = Queries()
+    p.create_db()
+    p.create_tables()
 
 
 if __name__ == '__main__':
