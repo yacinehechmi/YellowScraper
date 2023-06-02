@@ -3,13 +3,14 @@
 The scraper fetches data based on a dictionary of city(s) and the number of page(s) requested for each city, it can also discover nearby cities by scraping the nearby cities section.
 
 - The program is devided into two main categories of classes:
-  1. data classes(check utils.dataclasses):
+  1. Data classes(check utils.dataclasses):
   These are responsible for storing and transforming the data to the appropriate format
-  2. behavior classes (check utils):
-  These are responsible for the logic or the behavior of a particular part of the program
-    - Fetch for asyncrounsly requesting yellowpages.com server for html data
-    - Parse for parsing the html data and passing it to the dataclasses
-    - Queries for different database communications that are done in order to store the data in the database
+  2. Behavior classes (check utils):
+  as the name suggest these are responsible for the logic or the behavior of a particular part of the program
+    - Fetch: for asynchronously requesting yellowpages.com server for html data
+    - Parse: for parsing the html data and passing it to the dataclasses
+    - Queries: for different database communications that are done in order to store the data in the database, these operations are create database, create tables, upsert into tables, and select from tables. 
+    - You can find the sql queries in sql.queries
   
 
 ## Prerequisites
