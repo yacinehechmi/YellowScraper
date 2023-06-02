@@ -1,5 +1,9 @@
 from dataclasses import dataclass, field
+from sql.queries import queries
 import json
+
+
+upserts = queries['upsert_into_tables']
 
 
 @dataclass()
@@ -8,27 +12,21 @@ class Result():
     default_pagination: bool = True
     pages_scraped: int = 0
     pages_stored: int = 0
-    """
-        if is_scraped: pages_scraped+=1
-        else: do something to preserve the result
-    """
     is_scraped: bool = False
-    """
-        if is_stored: pages_stored+=1
-        else: do something to preserve the the parsed result
-    """
     is_stored: bool = False
-    total_pages: int = 0
+    total_pages: int = 3
+
+    def updateStored(self, stored):
+        self.pages_stored += stored
+
+    def updateScraped(self, scraped):
+        self.pages_scraped += scraped
 
 
 @dataclass()
 class Results():
     endpoints = []
 
-    """
-        if instance.total_pages == instance.pages_stored:
-            delete instance
-    """
     @classmethod
     def updateEndpoints(cls, endpoint):
         cls.endpoints.append(endpoint)
@@ -56,11 +54,12 @@ class Business():
     price_range: int
     year_in_business: int
     locality: str = field(default='')
-    amenities: list[int] = field(default_factory=list)
     categories: list[int] = field(default_factory=list)
+    amenities: list[int] = field(default_factory=list)
     city_name: str = field(init=False)
     zip_code: str = field(init=False)
     state_code: str = field(init=False)
+    query: str = upserts[0]
 
     def __post_init__(self):
         # name
@@ -71,7 +70,9 @@ class Business():
         # zip_code, city_name, state_code
         if self.locality:
             self.city_name = self.locality.text[0:self.locality.text.find(',')]
-            self.zip_code = self.locality.text[self.locality.text.rindex(' ')+1:]
+            self.zip_code = self.locality.text[
+                    self.locality.text.rindex(' ')+1:
+                    ]
             self.state_code = \
                 self.locality.text[
                                    self.locality.text.find(',')+2:
@@ -93,17 +94,17 @@ class Business():
         else:
             self.year_in_business = None
         # amenties
-        if self.amenities:
-            self.amenities = [amenity.text for amenities_list in
-                              self.amenities for amenity in
-                              amenities_list.find_all('span')]
-        else:
-            self.amenities = None
-        # categories
         if self.categories:
-            self.categories = [category.text for categories_list in
+            self.categories = [category for categories_list in
                                self.categories for category in
-                               categories_list.find_all('a')]
+                               categories_list]
+        else:
+            self.categories = None
+        # categories
+        if self.amenities:
+            self.amenities = [amenity for amenities_list in
+                              self.amenities for amenity in
+                              amenities_list if amenity.text]
         else:
             self.amenities = None
 
@@ -114,9 +115,9 @@ class Business():
                 self.year_in_business,
                 self.amenities,
                 self.categories,
-                self.zip_code,
                 self.city_name,
-                self.state_code
+                self.state_code,
+                self.zip_code
                 )
 
 
@@ -125,7 +126,7 @@ class Access():
     open_status: str
     website: str
     order_online: bool
-#    business_id: int | None = None
+    query: str = upserts[1]
 
     def __post_init__(self):
         # open_status
@@ -145,7 +146,11 @@ class Access():
             self.order_online = None
 
     def get_access(self):
-        return (self.open_status, self.website, self.order_online)
+        return (
+                self.open_status,
+                self.website,
+                self.order_online
+                )
 
 
 @dataclass()
@@ -153,7 +158,7 @@ class Tripadvisor():
     tripadvisor_rating: float = None
     tripadvisor_rating_count: int = None
     tripadvisor: dict = field(default_factory=dict, repr=False)
-#    business_id: int | None = None
+    query: str = upserts[2]
 
     def __post_init__(self):
         if self.tripadvisor:
@@ -168,8 +173,10 @@ class Tripadvisor():
             self.tripadvisor_rating = 0
 
     def get_tripadvisor(self):
-        if self.tripadvisor_rating and self.tripadvisor_rating_count:
-            return (self.tripadvisor_rating, self.tripadvisor_rating_count)
+        return (
+                self.tripadvisor_rating_count,
+                self.tripadvisor_rating
+                )
 
 
 @dataclass()
@@ -177,47 +184,68 @@ class Yellowpage():
     yellowpage_rating: float = field(init=False)
     yellowpage_rating_count: int = field(init=False)
     yellowpage: dict = field(default_factory=dict)
-#    business_id: int | None = None
+    query: str = upserts[3]
 
     def __post_init__(self):
         if self.yellowpage:
-            stars = {
-                    1: 'one',
-                    2: 'two',
-                    3: 'three',
-                    4: 'four',
-                    5: 'five',
-                    0.5: 'half',
-                    }
-            rate_sum = 0
-            for float_num, star in stars.items():
-                for rating in self.yellowpage_rating['class']:
-                    if rating == star:
-                        rate_sum += float_num
-            self.yellowpage_rating = rate_sum
+            if self.yellowpage.find('span', {'class': 'count'}):
+                rating_count = \
+                    self.yellowpage.find('span', {'class': 'count'}).text
+                self.yellowpage_rating_count = rating_count.replace('(', '')
+                self.yellowpage_rating_count =  \
+                    self.yellowpage_rating_count.replace(')', '')
+                self.yellowpage_rating_count =  \
+                    int(self.yellowpage_rating_count)
+            else:
+                self.yellowpage_rating_count = 0
+            if self.yellowpage.find('div', {'class': 'result-rating'}):
+                rating = self.yellowpage.find(
+                        'div', {'class': 'result-rating'}
+                        )['class']
+                stars = {
+                        1: 'one',
+                        2: 'two',
+                        3: 'three',
+                        4: 'four',
+                        5: 'five',
+                        0.5: 'half'
+                        }
+                rate_sum = 0
+                for float_num, star in stars.items():
+                    for rate in rating[1:]:
+                        if rate == star:
+                            rate_sum += float_num
+                self.yellowpage_rating = float(rate_sum)
+            else:
+                self.yellowpage_rating = 0
         else:
-            self.yellowpage_rating = None
+            self.yellowpage_rating = 0
+            self.yellowpage_rating_count = 0
 
     def get_yellowpage(self):
-        if self.yellowpage_rating and self.yellowpage_rating_count:
-            return (self.yellowpage_rating, self.yellowpage_rating_count)
+        return (
+                self.yellowpage_rating,
+                self.yellowpage_rating_count
+                )
 
 
 @dataclass()
 class Foursquare():
-    foursquare_rating: float = None
     foursquare: dict = field(default_factory=dict)
-#    business_id: int | None = None
+    foursquare_rating: float = field(init=False)
+    query: str = upserts[4]
 
     def __post_init__(self):
         if self.foursquare:
             try:
-                self.foursquare_rating = float(self.foursquare['data-foursquare'])
+                if self.foursquare['data-foursquare']:
+                    self.foursquare_rating = float(
+                        self.foursquare['data-foursquare']
+                        )
             except (TypeError, KeyError):
-                self.foursquare_rating = None
+                self.foursquare_rating = 0
+        else:
+            self.foursquare_rating = 0
 
     def get_foursquare(self):
-        if self.foursquare_rating:
-            return (self.foursquare_rating)
-        else:
-            return None
+        return (self.foursquare_rating,)
