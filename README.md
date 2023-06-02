@@ -1,4 +1,5 @@
 # YellowScraper-v1
+- Fixing still in progress.
 - This project is part of my Data Engineering studies, This is a python scraper that retrieves restaurant listings data from yellowpages.com and stores it in a postgres database
 The scraper fetches data based on a dictionary of city(s) and the number of page(s) requested for each city, it can also discover nearby cities by scraping the nearby cities section.
 
@@ -6,10 +7,10 @@ The scraper fetches data based on a dictionary of city(s) and the number of page
   1. data classes(check utils.dataclasses):
   These are responsible for storing and transforming the data to the appropriate format
   2. behavior classes (check utils):
-  These are responsible for the logic or the behavior of a particular part of the program
-    - Fetch for asyncrounsly requesting yellowpages.com server for html data
-    - Parse for parsing the html data and passing it to the dataclasses
-    - Queries for different database communications that are done in order to store the data in the database
+  As the name suggest these are responsible for the behavior of a particular part of the program
+    - Fetch: for asynchronously requesting yellowpages.com server for html data
+    - Parse: for parsing the html data and passing it to the dataclasses
+    - Queries: for different database communications that are done in order to store the data in the database
   
 
 ## Prerequisites
