@@ -24,19 +24,24 @@ class Connect():
 
 class Queries():
     def upsert(self, records):
-        self.db = settings['db_creds']['db']
-        with self.conn as conn:
-            cur = conn.cursor()
-            #  run first query to insert business_info data
-            # and get back the id of a record
-            #  and use that id to proceed inserting to the other related tables
-            cur.execute(queries['upsert_into_tables'][0], records[0])
-            for record in records:
-                try:
-                    cur.execute(record.query, record)
-                except (Exception, psycopg2.DatabaseError) as error:
-                    logger.error(f'''DATABASE QUERY FAILED:
-                     {record.query}{record} \n error: {error}''')
+        with Connect(settings['db_creds']['database']).cur as cur:
+            rec, query = records[0]
+            try:
+                cur.execute(query, rec)
+                id = cur.fetchone()[0]
+                for record in records[1:]:
+                    rec, query = record
+                    rec += (id,)
+                    try:
+                        cur.execute(query, rec)
+                    except (Exception, psycopg2.DatabaseError) as error:
+                        print(f"{error} \n in query {query} \n record {rec}")
+                        logger.error(f'''DATABASE QUERY FAILED:
+                     {query}{rec} \n error: {error}''')
+            except (Exception, psycopg2.DatabaseError) as error:
+                print(f"{error} \n in query {query} \n record {rec}")
+                logger.error(f'''DATABASE QUERY FAILED:
+                   {query}{rec} \n error: {error}''')
 
     def create_db(self):
         with Connect().cur as cur:
