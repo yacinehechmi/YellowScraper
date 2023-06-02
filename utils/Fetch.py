@@ -29,10 +29,18 @@ class Fetch:
             return await session.get(url, headers=headers)
         except httpx.ReadError as e:
             print(f'read failed {e}')
-        except httpx.HTTPError as e:
-            print(f'connection failed {e}')
+        except httpx.ReadTimeout as e:
+            print(f'connection read timeout error {e}')
+        except httpx.ConnectTimeout as e:
+            print(f'connection connection timeout error {e}')
+        except httpx.WriteTimeout as e:
+            print(f'connection write timeout error {e}')
         except httpx.RequestError as e:
-            print(f'connection failed {e}')
+            print(f'connection request error {e}')
+        except httpx.NetworkError as e:
+            print(f'connection network error {e}')
+        except (Exception, httpx.TimeoutException) as error:
+            print(f'connection http error {error.request.url} for {error}')
 
     async def fetch_all(self, session):
         '''
@@ -41,7 +49,7 @@ class Fetch:
         '''
         async with httpx.AsyncClient() as client:
             for req in self.requested:
-                print(f"endpoint: {req.endpoint} \n pagination: {req.total_pages}")
+                print(req.endpoint)
                 for page in range(1, req.total_pages):
                     if page >= 1:
                         url = f'https://www.yellowpages.com{req.endpoint}'
@@ -60,7 +68,5 @@ class Fetch:
             return self.res
 
     async def fetch(self):
-        limiter = AsyncLimiter(20)
-        async with limiter:
-            async with httpx.AsyncClient() as session:
-                return await self.fetch_all(session)
+        async with httpx.AsyncClient() as session:
+            return await self.fetch_all(session)
