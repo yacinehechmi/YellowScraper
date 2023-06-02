@@ -1,6 +1,7 @@
 # YellowScraper-v1
 - This project is part of my Data Engineering studies, This is a python scraper that retrieves restaurant listings data from yellowpages.com and stores it in a postgres database
 The scraper fetches data based on a dictionary of city(s) and the number of page(s) requested for each city, it can also discover nearby cities by scraping the nearby cities section.
+
 - The program is devided into two main categories of classes:
   1. data classes(check utils.dataclasses):
   These are responsible for storing and transforming the data to the appropriate format
@@ -59,7 +60,8 @@ its represented as dataclasses in the program check `dataclasses.py`.
 
 ## TODO
   - Fix logging
-  - Dockerize the program
+  - Fix Fetch Exception handling
+  - Add a Dockerfile
 
 ## Future Goals
   - Planning to create a second version of this project on airflow.
