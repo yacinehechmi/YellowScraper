@@ -5,14 +5,13 @@ queries = {
     "create_tables": """CREATE TABLE IF NOT EXISTS business_info (
                         business_id BIGSERIAL PRIMARY KEY NOT NULL,
                         name VARCHAR(100),
-                        phone VARCHAR(20),
                         price_range INTEGER,
                         year_in_business INTEGER,
                         amenities text[],
                         categories text[],
                         city_name VARCHAR(100),
                         city_code VARCHAR(30),
-                        zip_code INTEGER,
+                        zip_code VARCHAR(30),
                         updated_at TIMESTAMP,
                         CONSTRAINT business_info_name_unique UNIQUE (name)
                         );
@@ -49,12 +48,11 @@ queries = {
                         CONSTRAINT foursquare_unique_id_fk UNIQUE (business_id)
                         );""",
 
-    "upsert_into_tables": (
+    "upsert_into_tables": [
         """
         INSERT INTO business_info
         (
         name,
-        phone,
         price_range,
         year_in_business,
         amenities,
@@ -64,10 +62,9 @@ queries = {
         zip_code,
         updated_at
         )
-        VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,NOW())
+        VALUES (%s,%s,%s,%s,%s,%s,%s,%s,NOW())
         ON CONFLICT (name)
         DO UPDATE SET
-        phone=EXCLUDED.phone,
         price_range=EXCLUDED.price_range ,
         year_in_business=EXCLUDED.year_in_business,
         amenities=EXCLUDED.amenities,
@@ -146,7 +143,7 @@ queries = {
         updated_at=EXCLUDED.updated_at
         ;
         """
-    ),
+    ],
 
     "select":
         """
