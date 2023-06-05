@@ -2,11 +2,9 @@ import asyncio
 from aiolimiter import AsyncLimiter
 import httpx
 from fake_useragent import UserAgent
+from utils.logger import setup_logger
 
-import logging
-logger = logging
-logger.basicConfig(level=logging.ERROR, filename='logs/fetch.log',
-                   format='[%(asctime)s] %(levelname)s:%(message)s')
+fetch_logger = setup_logger('fetch_logger', 'logs/fetch.log')
 
 
 class Fetch:
@@ -35,17 +33,17 @@ class Fetch:
                 response = await client.get(url, headers=headers)
                 return response
             except httpx.ReadError as e:
-                logger.error(e)
+                fetch_logger.error(e)
             except httpx.ReadTimeout as e:
-                logger.error(e)
+                fetch_logger.error(e)
             except httpx.ConnectTimeout as e:
-                logger.error(e)
+                fetch_logger.error(e)
             except httpx.RequestError as e:
-                logger.error(e)
+                fetch_logger.error(e)
             except httpx.NetworkError as e:
-                logger.error(e)
+                fetch_logger.error(e)
             except (Exception, httpx.TimeoutException) as e:
-                logger.error(e)
+                fetch_logger.error(e)
 
     async def fetch_all(self, session):
         '''
