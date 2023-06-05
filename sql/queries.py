@@ -1,6 +1,6 @@
-from settings import settings
+from settings import DB_CREDENTIALS
 queries = {
-    "create_db": f"""CREATE DATABASE {settings['db_creds']['database']} TEMPLATE template0;""",
+    "create_db": f"""CREATE DATABASE {DB_CREDENTIALS['database']} TEMPLATE template0;""",
 
     "create_tables": """CREATE TABLE IF NOT EXISTS business_info (
                         business_id BIGSERIAL PRIMARY KEY NOT NULL,
