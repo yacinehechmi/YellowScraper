@@ -5,11 +5,11 @@ The scraper fetches data based on a dictionary of city(s) and the number of page
 
 - The program is devided into two main categories of classes:
   1. Data classes(check utils.dataclasses):
-  These are responsible for storing and transforming the data to the appropriate format
+  These are responsible for storing and transforming the data to the appropriate format 
   2. Behavior classes (check utils):
   as the name suggest these are responsible for the logic or the behavior of a particular part of the program
     - Fetch: for asynchronously requesting yellowpages.com server for html data
-    - Parse: for parsing the html data and passing it to the dataclasses
+    - Parse: for parsing the html data and passing it to the dataclasses (some of the parsing of nested elements also is happening in these classes)
     - Queries: for different database communications that are done in order to store the data in the database, these operations are create database, create tables, upsert into tables, and select from tables. 
     - You can find the sql queries in sql.queries
   
@@ -61,8 +61,6 @@ its represented as dataclasses in the program check `dataclasses.py`.
 ![Database Diagram](assets/database_model.png)
 
 ## TODO
-  - Fix logging
-  - Fix Fetch Exception handling
   - Add a Dockerfile
 
 ## Future Goals
