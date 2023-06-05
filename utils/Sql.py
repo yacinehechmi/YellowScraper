@@ -1,33 +1,31 @@
 import psycopg2
-from settings import settings
+from settings import DB_CREDENTIALS
 from sql.queries import queries
+from utils.logger import setup_logger
 
-import logging
-logger = logging
-logger.basicConfig(level=logging.ERROR, filename='logs/queries.log',
-                   format='[%(asctime)s] %(levelname)s:%(message)s')
+queries_logger = setup_logger('queries_logger', 'logs/queries.log')
 
 
 class Connect():
     def __init__(self, db=None):
         try:
             self.conn = psycopg2.connect(
-                    host=settings['db_creds']['host'],
-                    user=settings['db_creds']['user'],
+                    host=DB_CREDENTIALS['host'],
+                    user=DB_CREDENTIALS['user'],
                     database=db,
-                    password=settings['db_creds']['pass'],
-                    port=settings['db_creds']['port'],
+                    password=DB_CREDENTIALS['pass'],
+                    port=DB_CREDENTIALS['port'],
                 )
             with self.conn as conn:
                 self.conn.autocommit = True
                 self.cur = conn.cursor()
         except (Exception, psycopg2.OperationalError) as e:
-            logger.error(e)
+            queries_logger.error(e)
 
 
 class Queries():
     def upsert(self, records):
-        with Connect(settings['db_creds']['database']).cur as cur:
+        with Connect(DB_CREDENTIALS['database']).cur as cur:
             rec, query = records[0]
             try:
                 cur.execute(query, rec)
@@ -38,20 +36,20 @@ class Queries():
                     try:
                         cur.execute(query, rec)
                     except (Exception, psycopg2.DatabaseError) as e:
-                        logger.error(e)
+                        queries_logger.error(e)
             except (Exception, psycopg2.DatabaseError) as e:
-                logger.error(e)
+                queries_logger.error(e)
 
     def create_db(self):
         with Connect().cur as cur:
             try:
                 cur.execute(queries['create_db'])
             except (Exception, psycopg2.DatabaseError) as e:
-                logger.error(e)
+                queries_logger.error(e)
 
     def create_tables(self):
-        with Connect(settings['db_creds']['database']).cur as cur:
+        with Connect(DB_CREDENTIALS['database']).cur as cur:
             try:
                 cur.execute(queries['create_tables'])
             except (Exception, psycopg2.DatabaseError) as e:
-                logger.error(e)
+                queries_logger.error(e)
