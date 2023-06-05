@@ -1,27 +1,21 @@
 from sqlalchemy import create_engine
 import pandas as pd
-
-from sql.sql import queries
-from settings import settings
+from sql.queries import queries
+from settings import DB_CREDENTIALS, CSV_FILE_NAME
 
 
 def main():
     engine = create_engine(f'''postgresql+psycopg2://
-                           {user}:{password}@{host}:{port}/{db}''')
+                           {DB_CREDENTIALS['user']}:{DB_CREDENTIALS['pass']}@{DB_CREDENTIALS['host']}:
+                           {DB_CREDENTIALS['port']}/
+                           {DB_CREDENTIALS['database']}''')
     # add an empty dict here
     # add empty dataframe
-    result_proxy = engine.execute(queries['select'])
-    results = result_proxy.fetchall()
-    df = pd.DataFrame(results, columns=result_proxy.keys())
-    df.to_csv('data/sample_data.csv')
-    print(df.info())
+    results = engine.execute(queries['select'])
+    res = results.fetchall()
+    df = pd.DataFrame(res, columns=results.keys())
+    df.to_csv(f'data/{CSV_FILE_NAME}')
 
 
 if __name__ == "__main__":
-    host = settings['db_creds']['host']
-    database = 'yellowpages'
-    user = settings['db_creds']['user']
-    password = settings['db_creds']['pass']
-    port = settings['db_creds']['port']
-    db = settings['db_creds']['db']
     main()
