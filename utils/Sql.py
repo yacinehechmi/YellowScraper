@@ -1,8 +1,11 @@
 import psycopg2
-import logging
 from settings import settings
 from sql.queries import queries
-logger = logging.getLogger(__name__)
+
+import logging
+logger = logging
+logger.basicConfig(level=logging.ERROR, filename='logs/queries.log',
+                   format='[%(asctime)s] %(levelname)s:%(message)s')
 
 
 class Connect():
@@ -19,7 +22,7 @@ class Connect():
                 self.conn.autocommit = True
                 self.cur = conn.cursor()
         except (Exception, psycopg2.OperationalError) as e:
-            print(e)
+            logger.error(e)
 
 
 class Queries():
@@ -34,27 +37,21 @@ class Queries():
                     rec += (id,)
                     try:
                         cur.execute(query, rec)
-                    except (Exception, psycopg2.DatabaseError) as error:
-                        print(f"{error} \n in query {query} \n record {rec}")
-                        logger.error(f'''DATABASE QUERY FAILED:
-                     {query}{rec} \n error: {error}''')
-            except (Exception, psycopg2.DatabaseError) as error:
-                print(f"{error} \n in query {query} \n record {rec}")
-                logger.error(f'''DATABASE QUERY FAILED:
-                   {query}{rec} \n error: {error}''')
+                    except (Exception, psycopg2.DatabaseError) as e:
+                        logger.error(e)
+            except (Exception, psycopg2.DatabaseError) as e:
+                logger.error(e)
 
     def create_db(self):
         with Connect().cur as cur:
             try:
                 cur.execute(queries['create_db'])
-            except (Exception, psycopg2.DatabaseError) as error:
-                logger.error(f'''DATABASE QUERY FAILED:
-                    {queries['create_db']} \n error: {error}''')
+            except (Exception, psycopg2.DatabaseError) as e:
+                logger.error(e)
 
     def create_tables(self):
         with Connect(settings['db_creds']['database']).cur as cur:
             try:
                 cur.execute(queries['create_tables'])
-            except (Exception, psycopg2.DatabaseError) as error:
-                logger.error(f'''DATABASE QUERY FAILED
-            {queries['create_tables']} \n error: {error}''')
+            except (Exception, psycopg2.DatabaseError) as e:
+                logger.error(e)
