@@ -4,7 +4,7 @@ queries = {
 
     "create_tables": """CREATE TABLE IF NOT EXISTS business_info (
                         business_id BIGSERIAL PRIMARY KEY NOT NULL,
-                        name VARCHAR(100),
+                        name VARCHAR(300),
                         price_range INTEGER,
                         year_in_business INTEGER,
                         amenities text[],
@@ -18,7 +18,7 @@ queries = {
 
                         CREATE TABLE IF NOT EXISTS access_info (
                         open_status VARCHAR(30),
-                        website VARCHAR(500),
+                        website VARCHAR(1000),
                         order_online VARCHAR(30),
                         updated_at TIMESTAMP,
                         business_id BIGINT REFERENCES business_info(business_id),
