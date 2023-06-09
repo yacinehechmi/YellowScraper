@@ -2,15 +2,23 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
-''' if you wish to try this program with the default urls list and then
+''' if you want to try this program with the default urls list and then
 let the program figure out the pagination and other endpoints not included
 here you can set the default_settings to False
 just be aware that the server might block requests from your ip address
-considuring the amount, please do not abuse '''
+considuring the amount, please do not abuse. '''
 
 DEFAULT_SETTINGS = True
 DEFAULT_PAGINATION = 3
+BASE_URL = "https://www.yellowpages.com"
 CSV_FILE_NAME = "yellowpages_restaurants.csv"
+DB_CREDENTIALS = {
+        'host': os.getenv('HOST'),
+        'port': os.getenv('PORT'),
+        'pass': os.getenv('PG_PASS'),
+        'user': os.getenv('PG_USER'),
+        'database': os.getenv('DB')
+    }
 DEFAULT_CITIES = [
         "/los-angeles-ca/restaurants",
         "/miami-fl/restaurants",
@@ -62,11 +70,3 @@ DEFAULT_CITIES = [
         "/columbia-sc/restaurants",
         "/bronx-ny/restaurants"
         ]
-BASE_URL = "https://www.yellowpages.com"
-DB_CREDENTIALS = {
-        'host': os.getenv('HOST'),
-        'port': os.getenv('PORT'),
-        'pass': os.getenv('PG_PASS'),
-        'user': os.getenv('PG_USER'),
-        'database': os.getenv('DB')
-    }
