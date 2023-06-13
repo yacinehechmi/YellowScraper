@@ -24,21 +24,24 @@ class Connect():
 
 
 class Queries():
-    def upsert(self, records):
+    def upsert(self, cur, record):
+        rec, query = record[0]
+        try:
+            cur.execute(query, rec)
+            id = cur.fetchone()[0]
+            for rec in record[1:]:
+                r, query = rec
+                r += (id,)
+                try:
+                    cur.execute(query, r)
+                except (Exception, psycopg2.DatabaseError) as e:
+                    queries_logger.error(e)
+        except (Exception, psycopg2.DatabaseError) as e:
+            queries_logger.error(e)
+
+    def iter_through_queries(self, records):
         with Connect(DB_CREDENTIALS['database']).cur as cur:
-            rec, query = records[0]
-            try:
-                cur.execute(query, rec)
-                id = cur.fetchone()[0]
-                for record in records[1:]:
-                    rec, query = record
-                    rec += (id,)
-                    try:
-                        cur.execute(query, rec)
-                    except (Exception, psycopg2.DatabaseError) as e:
-                        queries_logger.error(e)
-            except (Exception, psycopg2.DatabaseError) as e:
-                queries_logger.error(e)
+            list(map(lambda record: self.upsert(cur, record), records))
 
     def create_db(self):
         with Connect().cur as cur:
