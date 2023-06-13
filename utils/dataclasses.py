@@ -8,44 +8,33 @@ upserts = queries['upsert_into_tables']
 
 @dataclass()
 class Result():
-    endpoint: str = ""
-    default_pagination: bool = True
-    pages_scraped: int = 0
-    pages_stored: int = 0
-    is_scraped: bool = False
-    is_stored: bool = False
-    total_pages: int = 3
-
-    def updateStored(self, stored):
-        self.pages_stored += stored
-
-    def updateScraped(self, scraped):
-        self.pages_scraped += scraped
+    endpoint: str
+    pages_scraped: int
+    total_pages: int
 
 
 @dataclass()
 class Results():
-    endpoints = []
+    results_list = []
 
     @classmethod
-    def updateEndpoints(cls, endpoint):
-        cls.endpoints.append(endpoint)
+    def set_results(cls, result: Result) -> None:
+        cls.results_list.append(result)
 
     @classmethod
-    def getEndpointsNames(cls):
-        endpoints_list = []
-        for endpoint in cls.endpoints:
-            endpoints_list.append(endpoint.endpoint)
-        return endpoints_list
+    def get_endpoints(cls) -> list:
+        return [result.endpoint for result in cls.results_list]
 
     @classmethod
-    def getEndpoints(cls):
-        return cls.endpoints
+    def clean_up(cls) -> None:
+        [cls.endpoints.pop(result) for result in cls.results_list
+         if result.total_pages == result.pages_scraped]
 
     @classmethod
-    def getNewEndpoints(cls):
-        return [city for city in cls.endpoints if
-                city.total_pages != city.pages_scraped]
+    def get_results(cls) -> list:
+        cls.clean_up()
+        return [result for result in cls.results_list if
+                result.total_pages != result.pages_scraped]
 
 
 @dataclass()
